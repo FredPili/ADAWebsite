@@ -30,6 +30,15 @@ p, ul, ol, table, pre, dl {
   margin:0 0 20px;
 }
 
+ul, ol {
+    margin: 20px 0; /* Adds 20px margin above and below the list */
+    padding-left: 40px; /* Adds indentation for the list items */
+}
+
+li {
+    margin-bottom: 10px; /* Adds space between list items */
+}
+
 h1, h2, h3 {
   line-height:1.1;
 }
