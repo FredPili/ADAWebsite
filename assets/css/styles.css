@@ -198,43 +198,39 @@ footer {
   padding: 20px 0; /* Add some padding */
 }
 
+/* Sticky Banner */
 .sticky-banner {
-  position: sticky;
+  position: fixed;
   top: 0;
-  width: 100vw; /* Force full width */
+  left: 0;
+  width: 100%; /* Full width */
   background-color: #2a2a2a; /* Dark background */
   color: #ffffff; /* White text */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.5rem 1rem;
-  z-index: 1000; /* Ensure it stays on top */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  display: flex; /* Flex layout for aligning items */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between items */
+  padding: 1rem 2rem; /* Padding for spacing */
+  z-index: 1000; /* Ensure the banner stays on top */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Optional shadow */
 }
 
-.sticky-banner .banner-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex: 1;
-  max-width: 1200px; /* Optional: limit content width */
-  margin: 0 auto;
-}
-
+/* Logo */
 .sticky-banner .logo {
-  height: 40px; /* Adjust logo size */
-  margin-right: 1rem;
+  height: 50px; /* Adjust as needed */
+  margin-right: 1rem; /* Space between logo and text */
 }
 
+/* Banner Text */
 .sticky-banner h1 {
-  font-size: 1.2rem;
-  margin: 0;
+  font-size: 1.5rem; /* Adjust font size */
+  margin: 0; /* Remove margin */
+  color: #ffffff;
 }
 
 .sticky-banner span {
-  font-size: 0.9rem;
-  margin-left: 1rem;
-  color: #bbbbbb; /* Slightly lighter subtitle */
+  font-size: 1rem; /* Subtitle font size */
+  color: #cccccc; /* Lighter color for subtitle */
+  margin-left: auto; /* Push to the right */
 }
 
 @media print, screen and (max-width: 960px) {
