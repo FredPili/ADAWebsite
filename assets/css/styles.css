@@ -234,7 +234,7 @@ footer {
 /* Sidebar Styles */
 .sidebar {
   position: fixed;
-  top: 40px; /* Adjusted for spacing */
+  top: 60; /* Adjusted for spacing */
   right: 5px; /* Move the sidebar to the right */
   width: 250px; /* Sidebar width */
   background-color: #f1f1f1;

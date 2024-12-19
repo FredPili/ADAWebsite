@@ -2,6 +2,7 @@
 
 # Site Settings
 theme: jekyll-theme-cayman
+title: ""
 
 # Custom CSS for styling
 include:
