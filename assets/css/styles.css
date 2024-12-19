@@ -246,12 +246,14 @@ footer {
   z-index: 10; /* Ensure it stays on top */
 }
 
-/* Left Bar for TOC */
 .toc-bar {
-  width: 5px;
-  background-color: #8d8d8d; /* Gray */
-  margin-right: 30px; /* Space between the bar and TOC */
-  height: 100%
+  position: absolute;  /* Make it absolute to ensure it stays fixed in the sidebar */
+  top: 0;
+  left: 0; /* Align it to the left */
+  width: 5px; /* Width of the line */
+  background-color: #007bff; /* Blue color */
+  margin-right: 15px; /* Space between the bar and the TOC */
+  height: 100%; /* Ensure it spans the full height of the sidebar */
 }
 
 /* Sidebar TOC */
