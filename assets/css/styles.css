@@ -279,9 +279,9 @@ footer {
   position: fixed;
   top: 20px; /* Position it at the top */
   left: 20px; /* Position it to the left */
-  padding: 10px 20px;
-  background-color: #007BFF; /* Button color */
-  color: white; /* Text color */
+  padding: 100px 20px;
+  background-color: #ffffff; /* Button color */
+  color: rgb(0, 0, 0); /* Text color */
   font-size: 16px;
   text-decoration: none; /* Remove underline from the link */
   border-radius: 5px; /* Rounded corners */
