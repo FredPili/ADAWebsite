@@ -273,7 +273,7 @@ footer {
     width: 2px; /* Width of the line */
     background-color: #b9b9b9; /* Color of the bar */
     height: 90%; /* Set the height to 90% of the sidebar */
-    margin-right: 35px; /* Space between the bar and the TOC */
+    margin-right: 50px; /* Space between the bar and the TOC */
     transform: translateY(-50%); /* Move the bar upwards by 50% of its height, effectively centering it */
   }
 
