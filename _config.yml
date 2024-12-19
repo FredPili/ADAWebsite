@@ -8,3 +8,7 @@ theme: jekyll-theme-cayman
 # Custom CSS for styling
 include:
   - assets/css/style.css
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
