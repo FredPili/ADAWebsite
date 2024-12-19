@@ -5,7 +5,7 @@ banner_header: "How You Became Smarter ...."
 subtitle: ".... or how has the volume of educational content changed over time"
 ---
 
-## **Introduction {#introduction}**
+## <a id="introduction"></a> **Introduction**
 > A brief introduction explaining the purpose of the analysis and the key questions being explored. Keep it simple, clear, and engaging.
 
 **Example:**
@@ -13,7 +13,7 @@ subtitle: ".... or how has the volume of educational content changed over time"
 
 ---
 
-## **Key Findings {#key-findings}**
+## <a id="key-findings"></a> **Key Findings**
 ### **Top Insights:**
 - **Sales Growth:** Sales increased by **25%** in Q3 compared to Q2.
 - **Product Performance:** **Product A** outperformed others in urban markets.
@@ -23,7 +23,7 @@ subtitle: ".... or how has the volume of educational content changed over time"
 
 ---
 
-## **Visual Insights {#visial-insight}**
+## <a id="visual-insight"></a> **Visual Insights**
 ### **Centered Image**
 ![Sales Trends Chart](assets/banner.jpeg)
 > *Figure 1: Sales trends across quarters.*
@@ -51,7 +51,7 @@ subtitle: ".... or how has the volume of educational content changed over time"
 
 ---
 
-## **Deep Dive Analysis {#deep-dive-analysis}**
+## <a id="deep-dive-analysis"></a> **Deep Dive Analysis**
 Break down each key finding with deeper analysis, supported by visuals and data tables.
 
 ### **Sales Analysis**
@@ -68,7 +68,7 @@ Break down each key finding with deeper analysis, supported by visuals and data 
 
 ---
 
-## **Interactive Plotly Visualization {#interactive-plotly-visualization}**
+## <a id="interactive-plotly-visualization"></a> **Interactive Plotly Visualization**
 Below is an interactive Plotly chart embedded directly into this Markdown file using HTML:
 
 <div>
@@ -116,7 +116,7 @@ Below is an interactive Plotly chart embedded directly into this Markdown file u
 
 ---
 
-## **Embedded Videos {#embedded-videos}**
+## <a id="embedded-videos"></a> **Embedded Videos**
 You can embed videos directly into your report using HTML. For example:
 
 ### **Marketing Campaign Video**
@@ -134,7 +134,7 @@ You can embed videos directly into your report using HTML. For example:
 
 ---
 
-## **Conclusions {#conclusions}**
+## <a id="conclusions"></a> **Conclusions**
 > *In summary, our analysis shows that targeted promotions in urban areas drive significant sales growth. However, maintaining momentum after campaigns remains a challenge.*
 
 ---
@@ -147,7 +147,7 @@ You can embed videos directly into your report using HTML. For example:
 
 ---
 
-## **Additional Notes {#additional-notes}**
+## <a id="additional-notes"></a> **Additional Notes**
 - **Dataset:** [View Dataset](https://github.com/epfl-dlab/YouNiverse)
 - **Tools Used:** *Python, pandas, Matplotlib*
 - **References:** Internal sales records and web traffic data.
