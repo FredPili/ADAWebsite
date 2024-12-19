@@ -29,16 +29,14 @@ padding-top: 70px
 /* Sidebar */
 .sidebar {
     position: sticky;
-    top: 100px; /* Sticks 100px from the top */
+    top: 0; /* Positions the sidebar at the top from the start */
     flex: 0 0 20%; /* 20% of the screen width */
-    max-width: 300px; /* Ensure the sidebar doesn't grow too large */
-    margin-left: 20px; /* Space between the wrapper and sidebar */
-    background-color: #c4c3c3; /* Sidebar background color */
+    max-width: 300px; /* Limit the maximum width */
+    background-color: #c4c3c3;
     padding: 15px;
+    border-radius: 8px;
     overflow-y: auto; /* Allow scrolling for long content */
-    border-radius: 8px; /* Rounded corners */
-    box-sizing: border-box; /* Include padding in width calculations */
-    height: auto; /* Adjust to content size */
+    box-sizing: border-box;
 }
 
 /* Banner at the top */
