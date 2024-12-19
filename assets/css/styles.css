@@ -239,8 +239,8 @@ footer {
     border-radius: 8px;
     overflow-y: auto; /* Allow scrolling for long content */
     box-sizing: border-box;
-    right: -180px; /* Move the sidebar to the right */
-    transition: right 1s ease;
+    right: -190px; /* Move the sidebar to the right */
+    transition: right 0.5s ease;
 }
 
 .sidebar:hover {
@@ -270,10 +270,10 @@ footer {
     position: absolute;  /* Make it absolute to ensure it stays fixed in the sidebar */
     top: 50%; /* Move the bar to the vertical middle of the sidebar */
     left: 0; /* Align the bar to the left */
-    width: 1px; /* Width of the line */
+    width: 2px; /* Width of the line */
     background-color: #b9b9b9; /* Color of the bar */
     height: 90%; /* Set the height to 90% of the sidebar */
-    margin-right: 20px; /* Space between the bar and the TOC */
+    margin-right: 25px; /* Space between the bar and the TOC */
     transform: translateY(-50%); /* Move the bar upwards by 50% of its height, effectively centering it */
   }
 
