@@ -229,28 +229,31 @@ footer {
 
 /* Parent container */
 .container {
-  display: flex; /* Enable flexbox */
-  flex-wrap: nowrap; /* Prevent wrapping */
+  display: flex; /* Enable Flexbox */
+  flex-direction: row; /* Align items horizontally */
   width: 100vw; /* Full width of the viewport */
   height: 100vh; /* Full height of the viewport */
 }
 
+/* Wrapper (Main Content) */
 .wrapper {
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto;
+  flex: 0 0 70%; /* 70% width */
+  background-color: #f9f9f9; /* Example background color */
   padding: 20px;
-  box-sizing: border-box; /* Ensure padding and border are included in width calculations */
+  box-sizing: border-box; /* Include padding in width calculations */
+  overflow-y: auto; /* Allow scrolling if content overflows */
 }
 
 /* Sidebar */
 .sidebar {
-  flex: 0 0 10%; /* Takes up 10% of the container width */
+  flex: 0 0 10%; /* 10% width */
   background-color: #ffffff; /* Example background color */
-  padding: 15px; /* Inner padding */
+  padding: 15px;
   box-sizing: border-box; /* Include padding in width calculations */
-  position: relative; /* Ensure it doesn’t overlap with other elements */
-  z-index: 10;
+  overflow-y: auto; /* Allow scrolling for long content */
+  position: sticky; /* Sticks to the top */
+  top: 0; /* Align to the top of the viewport */
+  height: 100vh; /* Full height of the viewport */
 }
 
 .sidebar.hidden {
