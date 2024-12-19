@@ -21,6 +21,13 @@ body {
     font-weight:400;
  }
 
+section {
+width: auto; /* Allow the content to use the available space */
+float: none; /* Remove float */
+margin: 0 auto; /* Center the content */
+padding: 20px; /* Add padding for readability */
+}
+
 /* Wrapper (Main Content) */
 .wrapper {
     flex: 0 0 60%; /* 60% of the screen width */
