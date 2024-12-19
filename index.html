@@ -103,6 +103,7 @@
             width: 100%;
             padding-top: 56.25%; /* 16:9 aspect ratio */
             overflow: hidden;
+            border-radius: 12px; /* Rounds the edges of thumbnails */
         }
 
         .thumbnail img {
@@ -111,17 +112,22 @@
             left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Ensures proper fit */
+            object-fit: cover;
+            border-radius: 12px; /* Ensures the image respects the rounded edges */
         }
 
         .video-info {
-            padding: 0.8rem; /* Increased padding for better spacing inside */
+            padding: 0.8rem; /* Adjust padding for cleaner spacing */
+            transition: color 0.2s ease-in-out; /* Smooth transition for text hover effect */
         }
 
-        .video-info h3 {
-            font-size: 0.95rem;
-            margin-bottom: 0.4rem; /* Space between title and views */
-            color: #333;
+        .video-info h3, .video-info p {
+            margin: 0;
+        }
+
+        .video-section a:hover .video-info h3,
+        .video-section a:hover .video-info p {
+            color: red; /* Highlight text in red on hover */
         }
 
         .video-info p {
