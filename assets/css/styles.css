@@ -13,7 +13,7 @@ align-items: center; /* Center content vertically */
 min-height: 100vh; /* Full viewport height */
 width: 100%; /* Full viewport width */
 background-color: #ffffff; /* Background for visibility */
-padding-top: 60px
+padding-top: 70px
  }
 
 /* Wrapper (Main Content) */
@@ -28,16 +28,17 @@ padding-top: 60px
 
 /* Sidebar */
 .sidebar {
+    position: sticky;
+    top: 100px; /* Sticks 100px from the top */
     flex: 0 0 20%; /* 20% of the screen width */
-    max-width: 300px; /* Ensure the sidebar doesn't grow too large on bigger screens */
+    max-width: 300px; /* Ensure the sidebar doesn't grow too large */
     margin-left: 20px; /* Space between the wrapper and sidebar */
-    background-color: #c4c3c3; /* White background */
+    background-color: #c4c3c3; /* Sidebar background color */
     padding: 15px;
     overflow-y: auto; /* Allow scrolling for long content */
     border-radius: 8px; /* Rounded corners */
     box-sizing: border-box; /* Include padding in width calculations */
-    height: auto; /* Adjusts to content size */
-    position: fixed;
+    height: auto; /* Adjust to content size */
 }
 
 /* Banner at the top */
@@ -50,7 +51,7 @@ nav.sticky-banner {
     color: #ffffff; /* White text */
     padding: 10px 20px;
     z-index: 1000;
-    height: 60px
+    height: 70px
 }
 
 nav.sticky-banner h1,
