@@ -17,15 +17,7 @@
       </div>
     </nav>
 
-    <!-- Sticky Button -->
-    <a href="{{ site.baseurl }}/index.html" class="sticky-button">Go to Main Page</a>
-
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <div class="toc-bar"></div> <!-- Left bar beside the TOC -->
-      <ul id="toc"></ul>  <!-- This will be populated with JavaScript -->
-    </div>
-
+    <!-- Main content -->
     <div class="wrapper">
       <section>
 
@@ -38,6 +30,16 @@
         {% endif %}
       </footer>
     </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="toc-bar"></div> <!-- Left bar beside the TOC -->
+      <ul id="toc"></ul>  <!-- This will be populated with JavaScript -->
+    </div>
+
+    <!-- Sticky Button -->
+    <a href="{{ site.baseurl }}/index.html" class="sticky-button">Go to Main Page</a>
+
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
 
 
