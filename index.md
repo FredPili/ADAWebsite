@@ -29,7 +29,7 @@ title: "Sickada"
 **Example:**
 *Have you ever wondered why sales spike during certain months? This report uncovers trends, patterns, and insights from our latest dataset.*
 
----
+
 
 ## **Key Findings**
 ### **Top Insights:**
@@ -39,19 +39,18 @@ title: "Sickada"
 
 > Use **bold text** for key points and *italics* for clarifications.
 
----
+
 
 ## **Visual Insights**
 ### **Centered Image**
-![Sales Trends Chart](assets/banner.jpeg)
+![Sales Trends Chart](/assets/banner.jpeg)
 > *Figure 1: Sales trends across quarters.*
 
----
 
 ### **Image with Text Alignment**
 #### Image to the Left
 <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
-    <img src="assets/banner.jpeg" alt="Urban Market Performance" width="40%" style="margin-right: 1rem;">
+    <img src="/assets/banner.jpeg" alt="Urban Market Performance" width="40%" style="margin-right: 1rem;">
     <p>
         **Observation:** *Product A demonstrated remarkable performance in urban markets during the campaign. This suggests a need to further target similar demographics for sustained growth.*
     </p>
@@ -64,7 +63,7 @@ title: "Sickada"
     <p style="margin-right: 1rem;">
         **Insight:** *Website traffic surged after the new campaign launch, highlighting strong audience engagement. Future campaigns can capitalize on this trend to drive conversions.*
     </p>
-    <img src="assets/banner.jpeg" alt="Website Traffic Growth" width="40%">
+    <img src="/assets/banner.jpeg" alt="Website Traffic Growth" width="40%">
 </div>
 
 ---
