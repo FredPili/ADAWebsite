@@ -246,11 +246,6 @@ footer {
   z-index: 10; /* Ensure it stays on top */
 }
 
-/* Sidebar Heading */
-.sidebar h3 {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
 
 /* List Style */
 .sidebar ul {
