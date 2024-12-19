@@ -3,6 +3,14 @@ layout: default
 title: "Sickada"
 ---
 
+<!-- Top Banner -->
+<div style="background-color: #2a2a2a; color: #ffffff; padding: 1.5rem 0; text-align: center;">
+  <h1 style="margin: 0; font-size: 2.5rem;">Data Analysis Presentation</h1>
+  <p style="margin: 0; font-size: 1.2rem;">Insights and Findings by Team Sickada</p>
+</div>
+
+---
+
 # Data Analysis Report
 
 ## **Main Title of the Report**
@@ -168,7 +176,7 @@ You can embed videos directly into your report using HTML. For example:
 ---
 
 ## **Additional Notes**
-- **Dataset:** [View Dataset](#)
+- **Dataset:** [View Dataset](https://github.com/epfl-dlab/YouNiverse)
 - **Tools Used:** *Python, pandas, Matplotlib*
 - **References:** Internal sales records and web traffic data.
 
