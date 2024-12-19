@@ -242,7 +242,6 @@ footer {
   width: 250px; /* Sidebar width */
   background-color: #ffffff;
   padding: 15px;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Shadow on the left of the sidebar */
   z-index: 10; /* Ensure it stays on top */
   transition: all 0.3s ease-in-out; /* Smooth resizing */
 }
