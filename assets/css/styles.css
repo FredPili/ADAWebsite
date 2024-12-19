@@ -37,3 +37,29 @@ background-color: #ffffff; /* Background for visibility */
     box-sizing: border-box; /* Include padding in width calculations */
     height: auto; /* Adjusts to content size */
 }
+
+/* Banner at the top */
+nav.sticky-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the screen */
+    background-color: #20242c; /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+nav.sticky-banner h1,
+nav.sticky-banner h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
