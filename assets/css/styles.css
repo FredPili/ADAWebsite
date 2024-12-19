@@ -28,9 +28,9 @@ padding-top: 70px
 
 /* Sidebar */
 .sidebar {
-    position: sticky;
-    top: 0; /* Positions the sidebar at the top from the start */
-    flex: 0 0 20%; /* 20% of the screen width */
+    position: fixed;
+    top: 140; /* Positions the sidebar at the top from the start */
+    right: 5px;
     max-width: 300px; /* Limit the maximum width */
     background-color: #c4c3c3;
     padding: 15px;
