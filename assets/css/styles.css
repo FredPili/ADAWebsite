@@ -310,7 +310,7 @@ footer {
   top: 90px; /* Position it at the top */
   left: 5px; /* Position it to the left */
   flex: 0 0 8%;
-  max-width: 150px; /* Limit the maximum width */
+  max-width: 200px; /* Limit the maximum width */
   padding: 10px 20px;
   background-color: #ffffff; /* Button color */
   color: rgb(0, 0, 0); /* Text color */
