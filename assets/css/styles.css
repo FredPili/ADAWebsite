@@ -289,7 +289,7 @@ footer {
   position: fixed;
   top: 100px; /* Position it at the top */
   left: 20px; /* Position it to the left */
-  padding: 20px 20px;
+  padding: 10px 20px;
   background-color: #ffffff; /* Button color */
   color: rgb(0, 0, 0); /* Text color */
   font-size: 16px;
@@ -301,7 +301,7 @@ footer {
 }
 
 .sticky-button:hover {
-  background-color: #a4a6a8; /* Darker blue on hover */
+  background-color: #cecece; /* Darker blue on hover */
 }
 
 @media print, screen and (max-width: 960px) {
