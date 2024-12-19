@@ -37,13 +37,13 @@ background-color: #ffffff; /* Background for visibility */
     box-sizing: border-box; /* Include padding in width calculations */
     height: auto; /* Adjusts to content size */
     position: fixed;
-    top: 0;
+    top: 100px;
     right: 5px;
 }
 
 /* Banner at the top */
 nav.sticky-banner {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%; /* Full width of the screen */
