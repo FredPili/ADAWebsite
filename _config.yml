@@ -11,3 +11,4 @@ include:
 plugins:
   - jekyll-seo-tag
   - jekyll-paginate
+  - jekyll-toc
