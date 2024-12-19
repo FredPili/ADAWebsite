@@ -31,6 +31,7 @@ padding-top: 70px
     position: fixed;
     top: 70px; /* Positions the sidebar at the top from the start */
     right: 5px;
+    flex: 0 0 15%;
     max-width: 300px; /* Limit the maximum width */
     background-color: #c4c3c3;
     padding: 15px;
