@@ -234,12 +234,13 @@ footer {
 /* Sidebar Styles */
 .sidebar {
   position: fixed;
-  top: 40;
-  right: 5; /* Move the sidebar to the right */
-  width: 250px;
+  top: 40px; /* Adjusted for spacing */
+  right: 5px; /* Move the sidebar to the right */
+  width: 250px; /* Sidebar width */
   background-color: #f1f1f1;
   padding: 20px;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Shadow on the left of the sidebar */
+  z-index: 10; /* Ensure it stays on top */
 }
 
 /* Sidebar Heading */
@@ -270,14 +271,8 @@ footer {
 
 /* Main Content Adjustment */
 .main-content {
-  margin-right: 270px; /* Add space to the right side for the sidebar */
-  padding: 20px;
-}
-
-
-/* Main Content */
-.main-content {
-  margin-left: 270px; /* Space for the sidebar */
+  margin-right: 0px; /* No margin needed on the right side now */
+  margin-left: 270px; /* Add space to the left side for the sidebar */
   padding: 20px;
 }
 
