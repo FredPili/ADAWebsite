@@ -7,19 +7,24 @@
 
 
 body {
-display: flex; /* Use Flexbox for layout */
-justify-content: center; /* Center content horizontally */
-align-items: center; /* Center content vertically */
-min-height: 100vh; /* Full viewport height */
-width: 100%; /* Full viewport width */
-background-color: #ffffff; /* Background for visibility */
-padding-top: 70px
+    display: flex; /* Use Flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    min-height: 100vh; /* Full viewport height */
+    width: 100%; /* Full viewport width */
+    background-color: #ffffff; /* Background for visibility */
+    padding-top: 70px;
+    font-size: 17px;
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    color:#595959;
+    font-weight:400;
  }
 
 /* Wrapper (Main Content) */
 .wrapper {
     flex: 0 0 60%; /* 60% of the screen width */
-    background-color: #d1d1d1; /* White background */
+    background-color: #ffffff; /* White background */
     padding: 20px; /* Add padding */
     overflow-y: auto; /* Allow scrolling if content overflows */
     border-radius: 8px; /* Rounded corners */
@@ -33,7 +38,7 @@ padding-top: 70px
     right: 5px;
     flex: 0 0 15%;
     max-width: 300px; /* Limit the maximum width */
-    background-color: #c4c3c3;
+    background-color: #ffffff;
     padding: 15px;
     border-radius: 8px;
     overflow-y: auto; /* Allow scrolling for long content */
