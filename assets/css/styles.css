@@ -1,7 +1,6 @@
-/* General Layout */
 body {
   background-color: #fff;
-  padding: 20px; /* Reduced padding for smaller screens */
+  padding: 20px; /* Adjust padding for smaller screens */
   font-size: 17px;
   line-height: 1.5;
   font-family: 'Montserrat', sans-serif;
@@ -27,7 +26,7 @@ body {
 .sidebar {
   position: fixed;
   top: 100px;
-  right: 5px;
+  right: 0;
   width: 250px; /* Default sidebar width */
   background-color: #f1f1f1;
   padding: 15px;
@@ -87,8 +86,45 @@ body {
   background-color: #cecece;
 }
 
+/* Sticky Banner */
+.sticky-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  background-color: #20242c; /* Dark background */
+  color: #ffffff; /* White text */
+  display: flex; /* Flex layout for aligning items */
+  flex-direction: column; /* Stack the text vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center the content vertically */
+  padding: 8px 2rem; /* Padding for spacing */
+  z-index: 1000; /* Ensure the banner stays on top */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Optional shadow */
+}
+
+/* Banner Title */
+.sticky-banner h1 {
+  font-size: 1.5rem; /* Adjust font size */
+  margin: 0; /* Remove margin */
+  color: #ffffff;
+  text-align: center; /* Ensure the text is centered */
+}
+
+/* Subtitle */
+.sticky-banner .subtitle {
+  font-size: 1rem; /* Slightly smaller font size for the subtitle */
+  margin: 0.5rem 0 0; /* Space between the title and subtitle */
+  color: #b0b0b0; /* Lighter color for the subtitle */
+  text-align: center; /* Center align the subtitle */
+}
+
 /* Responsive Adjustments */
 @media screen and (max-width: 1200px) {
+  .wrapper {
+    padding: 0 10px; /* Add more flexible padding */
+  }
+
   .sidebar {
     width: 200px; /* Adjust sidebar for medium screens */
   }
