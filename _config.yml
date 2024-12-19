@@ -1,0 +1,11 @@
+# _config.yml for GitHub Pages
+
+# Theme Configuration
+theme: minima
+
+# Layout Settings
+defaults:
+  - scope:
+      path: "" # Applies to all files
+    values:
+      layout: single # Use a single column layout to remove the sidebar
