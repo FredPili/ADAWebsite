@@ -103,6 +103,8 @@ img {
   max-width:100%;
 }
 
+
+
 header {
   width: 100%; /* Make the header span the full width of the page */
   float: none; /* Remove float */
@@ -195,6 +197,27 @@ footer {
   text-align: center; /* Center the content */
   padding: 20px 0; /* Add some padding */
 }
+
+.top-banner {
+  width: 100%; /* Full width of the page */
+  background-color: #2a2a2a; /* Dark background */
+  color: #ffffff; /* White text */
+  text-align: center; /* Center-align text */
+  padding: 2rem 0; /* Add vertical padding for spacing */
+  margin: 0; /* Remove any margin */
+  box-sizing: border-box; /* Include padding in the element's total width */
+}
+
+.top-banner h1 {
+  margin: 0;
+  font-size: 2.5rem; /* Larger font size for the title */
+}
+
+.top-banner p {
+  margin: 0;
+  font-size: 1.2rem; /* Slightly smaller font for the subtitle */
+}
+
 
 @media print, screen and (max-width: 960px) {
 
