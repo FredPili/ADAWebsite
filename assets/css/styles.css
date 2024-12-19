@@ -250,7 +250,7 @@ footer {
 .toc-bar {
   width: 5px;
   background-color: #8d8d8d; /* Gray */
-  margin-right: 10px; /* Space between the bar and TOC */
+  margin-right: 30px; /* Space between the bar and TOC */
   height: 100%
 }
 
