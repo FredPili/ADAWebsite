@@ -239,7 +239,7 @@ footer {
     border-radius: 8px;
     overflow-y: auto; /* Allow scrolling for long content */
     box-sizing: border-box;
-    right: -150px; /* Move the sidebar to the right */
+    right: -200px; /* Move the sidebar to the right */
     transition: right 1s ease;
 }
 
@@ -273,7 +273,7 @@ footer {
     width: 1px; /* Width of the line */
     background-color: #b9b9b9; /* Color of the bar */
     height: 90%; /* Set the height to 90% of the sidebar */
-    margin-right: 15px; /* Space between the bar and the TOC */
+    margin-right: 20px; /* Space between the bar and the TOC */
     transform: translateY(-50%); /* Move the bar upwards by 50% of its height, effectively centering it */
   }
 
