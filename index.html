@@ -106,8 +106,6 @@
         }
 
         .video-card {
-            width: 100%;
-            height: 280px; /* Set a fixed height for the video cards */
             background-color: white;
             border-radius: 8px;
             overflow: hidden;
@@ -120,15 +118,26 @@
             transform: scale(1.05);
         }
 
-        .video-card img {
+        .thumbnail {
+            position: relative;
             width: 100%;
-            height: 140px; /* Fixed height for the thumbnails */
-            object-fit: cover; /* Ensures the thumbnail image fits proportionally */
+            padding-top: 56.25%; /* 16:9 aspect ratio */
+            overflow: hidden;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .thumbnail img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image scales without distortion */
         }
 
         .video-info {
             padding: 0.7rem;
-            height: 140px; /* Fixed height for the text section */
+            height: auto;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -187,85 +196,84 @@
     <section class="video-section">
         <h2>Les plus récentes</h2>
         <div class="video-grid">
-
             <div class="video-card">
-                <a href="template_learning_personality">
+                <div class="thumbnail">
                     <img src="assets/thumbnail1.jpg" alt="Thumbnail 1">
-                    <div class="video-info">
-                        <h3>What’s your learning personality type?</h3>
-                        <p>209k vues · il y a 1 jour</p>
-                    </div>
-                </a>
+                </div>
+                <div class="video-info">
+                    <h3>What’s your learning personality type?</h3>
+                    <p>209k views · 1 day ago</p>
+                </div>
             </div>
             
             <div class="video-card">
-                <a href="template_time_waste">
+                <div class="thumbnail">
                     <img src="assets/thumbnail2.jpg" alt="Thumbnail 2">
-                    <div class="video-info">
-                        <h3>You will never guess what others waste their time on…</h3>
-                        <p>1.1M vues · il y a 1 mois</p>
-                    </div>
-                </a>
+                </div>
+                <div class="video-info">
+                    <h3>You will never guess what others waste their time on…</h3>
+                    <p>1.1M views · 1 month ago</p>
+                </div>
             </div>
 
             <div class="video-card">
-                <a href="template_time_waste">
+                <div class="thumbnail">
                     <img src="assets/thumbnail2.jpg" alt="Thumbnail 2">
-                    <div class="video-info">
-                        <h3>You will never guess what others waste their time on…</h3>
-                        <p>1.1M vues · il y a 1 mois</p>
-                    </div>
-                </a>
+                </div>
+                <div class="video-info">
+                    <h3>You will never guess what others waste their time on…</h3>
+                    <p>1.1M views · 1 month ago</p>
+                </div>
             </div>
 
             <div class="video-card">
-                <a href="template_time_waste">
+                <div class="thumbnail">
                     <img src="assets/thumbnail2.jpg" alt="Thumbnail 2">
-                    <div class="video-info">
-                        <h3>You will never guess what others waste their time on…</h3>
-                        <p>1.1M vues · il y a 1 mois</p>
-                    </div>
-                </a>
+                </div>
+                <div class="video-info">
+                    <h3>You will never guess what others waste their time on…</h3>
+                    <p>1.1M views · 1 month ago</p>
+                </div>
             </div>
 
             <div class="video-card">
-                <a href="template_time_waste">
+                <div class="thumbnail">
                     <img src="assets/thumbnail2.jpg" alt="Thumbnail 2">
-                    <div class="video-info">
-                        <h3>You will never guess what others waste their time on…</h3>
-                        <p>1.1M vues · il y a 1 mois</p>
-                    </div>
-                </a>
+                </div>
+                <div class="video-info">
+                    <h3>You will never guess what others waste their time on…</h3>
+                    <p>1.1M views · 1 month ago</p>
+                </div>
             </div>
 
             <div class="video-card">
-                <a href="template_time_waste">
+                <div class="thumbnail">
                     <img src="assets/thumbnail2.jpg" alt="Thumbnail 2">
-                    <div class="video-info">
-                        <h3>You will never guess what others waste their time on…</h3>
-                        <p>1.1M vues · il y a 1 mois</p>
-                    </div>
-                </a>
+                </div>
+                <div class="video-info">
+                    <h3>You will never guess what others waste their time on…</h3>
+                    <p>1.1M views · 1 month ago</p>
+                </div>
             </div>
 
             <div class="video-card">
-                <a href="template_time_waste">
+                <div class="thumbnail">
                     <img src="assets/thumbnail2.jpg" alt="Thumbnail 2">
-                    <div class="video-info">
-                        <h3>You will never guess what others waste their time on…</h3>
-                        <p>1.1M vues · il y a 1 mois</p>
-                    </div>
-                </a>
+                </div>
+                <div class="video-info">
+                    <h3>You will never guess what others waste their time on…</h3>
+                    <p>1.1M views · 1 month ago</p>
+                </div>
             </div>
 
             <div class="video-card">
-                <a href="template_time_waste">
+                <div class="thumbnail">
                     <img src="assets/thumbnail2.jpg" alt="Thumbnail 2">
-                    <div class="video-info">
-                        <h3>You will never guess what others waste their time on…</h3>
-                        <p>1.1M vues · il y a 1 mois</p>
-                    </div>
-                </a>
+                </div>
+                <div class="video-info">
+                    <h3>You will never guess what others waste their time on…</h3>
+                    <p>1.1M views · 1 month ago</p>
+                </div>
             </div>
 
             <!-- Repeat the other cards as needed -->
