@@ -1,8 +1,8 @@
 # _config.yml
 
 # Site Settings
-theme: jekyll-theme-cayman
 title: ""
+theme: jekyll-theme-cayman
 
 # Custom CSS for styling
 include:
