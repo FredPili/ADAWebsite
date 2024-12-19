@@ -12,7 +12,7 @@
 
     <nav class="sticky-banner">
       <div class="banner-content">
-        <h1>How You Became Smarter ...</h1>
+        <h1 class="banner-header">How You Became Smarter ...</h1>
         <h2 class="subtitle">... or how has the volume of educational content changed over time</h2> <!-- Subtitle added here -->
       </div>
     </nav>
@@ -71,11 +71,17 @@
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       // Select all headers (h1, h2, h3, etc.)
-      const headers = document.querySelectorAll('h2');
+      const headers = document.querySelectorAll('h1', 'h2');
       const toc = document.getElementById('toc');
   
       // Iterate through all headers to create TOC items
       headers.forEach((header, index) => {
+        if (header.classList.contains('subtitle')) {
+          return; //Skip subtitle
+        }
+        if (header.classList.contains('banner-header')) {
+          return; //Skip banner header
+        }
         const listItem = document.createElement('li');
         const link = document.createElement('a');
         
