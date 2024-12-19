@@ -144,7 +144,7 @@ You can embed videos directly into your report using HTML. For example:
   <iframe
     width="560"
     height="315"
-    src="https://www.youtube.com/embed/watch?v=tiEPzEp2T4A"
+    src="https://www.youtube.com/embed/tiEPzEp2T4A"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen
