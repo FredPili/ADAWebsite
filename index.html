@@ -14,14 +14,14 @@
         }
 
         body {
-            background-color: white;
+            background-color: #f9f9f9;
             color: black;
         }
 
         /* Header - Banner */
         .banner {
             background: url('assets/banner.jpeg') no-repeat center center/cover;
-            height: 200px;
+            height: 240px; /* Adjusted for more prominence */
             position: relative;
         }
 
@@ -31,11 +31,13 @@
             align-items: center;
             gap: 1rem;
             padding: 1rem 2rem;
+            background-color: white; /* Added background for contrast */
+            border-bottom: 1px solid #ddd;
         }
 
         .profile-pic {
-            width: 100px;
-            height: 100px;
+            width: 120px; /* Enlarged for visibility */
+            height: 120px;
             border-radius: 50%;
             border: 3px solid #333;
             background: url('assets/profile.jpeg') no-repeat center center/cover;
@@ -43,18 +45,33 @@
 
         .channel-details h1 {
             font-size: 1.8rem;
+            margin-bottom: 0.5rem;
         }
 
         .channel-details p {
-            color: black;
+            color: #555;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .subscribe-button {
+            margin-left: auto;
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
         }
 
         /* Navigation Tabs */
         nav {
             display: flex;
-            gap: 1.5rem;
+            justify-content: space-around;
             padding: 1rem 2rem;
-            border-bottom: 1px solid #333;
+            background-color: white;
+            border-bottom: 1px solid #ddd;
         }
 
         nav a {
@@ -65,55 +82,73 @@
         }
 
         nav a.active {
-            color: black;
+            color: red;
             border-bottom: 2px solid red;
         }
 
-        /* Video Grid */
+        /* Video Section */
         .video-section {
-            padding: 1rem 2rem;
+            padding: 2rem;
+            background-color: white;
         }
-        .video-section a {
-        color: black; 
-        text-decoration: none; 
-        }
-        .video-section a:hover {
-        color: red;
+
+        .video-section h2 {
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+            color: #333;
         }
 
         .video-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr); /* Ensures exactly 4 columns */
+            grid-template-columns: repeat(4, 1fr); /* Fixed 4 columns */
             gap: 1rem;
-    }
+        }
 
         .video-card {
-            background-color: #1818189c;
+            background-color: white;
             border-radius: 8px;
             overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .video-card:hover {
+            transform: scale(1.05);
         }
 
         .video-card img {
             width: 100%;
-            height: 100px;
+            height: 140px; /* Adjusted for thumbnail proportion */
             object-fit: cover;
         }
 
         .video-info {
-            padding: 0.5rem;
+            padding: 0.7rem;
         }
 
         .video-info h3 {
-            font-size: 1rem;
+            font-size: 0.95rem;
+            color: #333;
             margin-bottom: 0.3rem;
+            line-height: 1.4;
         }
 
         .video-info p {
-            color: black;
+            color: #666;
             font-size: 0.8rem;
         }
 
+        /* Footer Section */
+        .footer {
+            padding: 1rem;
+            background-color: white;
+            text-align: center;
+            color: #777;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+            border-top: 1px solid #ddd;
+        }
     </style>
 </head>
 <body>
@@ -129,20 +164,21 @@
             <p>@SickADA-2024 · 841k abonnés · 209 vidéos</p>
             <p>Why you should drop out...</p>
         </div>
+        <button class="subscribe-button">Subscribe</button>
     </div>
 
     <!-- Navigation Tabs -->
     <nav>
-        <a href="#" class="active">Home</a>
-        <a href="#">Videos</a>
-        <a href="#">Shorts</a>
+        <a href="#" class="active">Accueil</a>
+        <a href="#">Vidéos</a>
         <a href="#">Playlists</a>
-        <a href="#">Community</a>
+        <a href="#">Communauté</a>
+        <a href="#">À propos</a>
     </nav>
 
     <!-- Video Section -->
     <section class="video-section">
-        <h2>For you / popular videos</h2>
+        <h2>Les plus récentes</h2>
         <div class="video-grid">
 
             <div class="video-card">
@@ -150,7 +186,7 @@
                     <img src="assets/thumbnail1.jpg" alt="Thumbnail 1">
                     <div class="video-info">
                         <h3>What’s your learning personality type?</h3>
-                        <p>209k views · 1 jour</p>
+                        <p>209k vues · il y a 1 jour</p>
                     </div>
                 </a>
             </div>
@@ -160,113 +196,80 @@
                     <img src="assets/thumbnail2.jpg" alt="Thumbnail 2">
                     <div class="video-info">
                         <h3>You will never guess what others waste their time on…</h3>
-                        <p>1.1M views · 1 months ago</p>
+                        <p>1.1M vues · il y a 1 mois</p>
                     </div>
                 </a>
             </div>
+
             <div class="video-card">
-                <a href="template_size_matters">
-                    <img src="assets/thumbnail3.jpg" alt="Thumbnail 3">
+                <a href="template_time_waste">
+                    <img src="assets/thumbnail2.jpg" alt="Thumbnail 2">
                     <div class="video-info">
-                        <h3>Does size really matter?</h3>
-                        <p>1.8M views · 2 months ago</p>
+                        <h3>You will never guess what others waste their time on…</h3>
+                        <p>1.1M vues · il y a 1 mois</p>
                     </div>
                 </a>
             </div>
+
             <div class="video-card">
-                <a href="how_you_became_smarter">
-                    <img src="assets/thumbnail4.jpg" alt="Thumbnail 4">
+                <a href="template_time_waste">
+                    <img src="assets/thumbnail2.jpg" alt="Thumbnail 2">
                     <div class="video-info">
-                        <h3>How you became smarter</h3>
-                        <p>1M views · 2 months ago</p>
+                        <h3>You will never guess what others waste their time on…</h3>
+                        <p>1.1M vues · il y a 1 mois</p>
                     </div>
                 </a>
             </div>
+
             <div class="video-card">
-                <a href="template_wrapped">
-                    <img src="assets/thumbnail1.jpg" alt="Thumbnail 1">
+                <a href="template_time_waste">
+                    <img src="assets/thumbnail2.jpg" alt="Thumbnail 2">
                     <div class="video-info">
-                        <h3>YouTube Wrapped [EDU EDITION]</h3>
-                        <p>209k views · 1 day ago</p>
+                        <h3>You will never guess what others waste their time on…</h3>
+                        <p>1.1M vues · il y a 1 mois</p>
                     </div>
                 </a>
             </div>
+
             <div class="video-card">
-                <a href="template_study_last_minute">
-                    <img src="assets/thumbnail1.jpg" alt="Thumbnail 1">
+                <a href="template_time_waste">
+                    <img src="assets/thumbnail2.jpg" alt="Thumbnail 2">
                     <div class="video-info">
-                        <h3>Y’all study last minute, and it shows…</h3>
-                        <p>209k views · 1 day ago</p>
+                        <h3>You will never guess what others waste their time on…</h3>
+                        <p>1.1M vues · il y a 1 mois</p>
                     </div>
                 </a>
             </div>
+
             <div class="video-card">
-                <a href="template_control_info">
-                    <img src="assets/thumbnail1.jpg" alt="Thumbnail 1">
+                <a href="template_time_waste">
+                    <img src="assets/thumbnail2.jpg" alt="Thumbnail 2">
                     <div class="video-info">
-                        <h3>Who is controlling the information?</h3>
-                        <p>209k views · 1 day ago</p>
+                        <h3>You will never guess what others waste their time on…</h3>
+                        <p>1.1M vues · il y a 1 mois</p>
                     </div>
                 </a>
             </div>
+
             <div class="video-card">
-                <a href="template_country">
-                    <img src="assets/thumbnail1.jpg" alt="Thumbnail 1">
+                <a href="template_time_waste">
+                    <img src="assets/thumbnail2.jpg" alt="Thumbnail 2">
                     <div class="video-info">
-                        <h3>Which country is the smartest?</h3>
-                        <p>209k views · 1 day ago</p>
+                        <h3>You will never guess what others waste their time on…</h3>
+                        <p>1.1M vues · il y a 1 mois</p>
                     </div>
                 </a>
             </div>
+
+            <!-- Repeat the other cards as needed -->
+
         </div>
     </section>
-    
-    <section class="text">
-        <h2> A little bit about this project </h2>
-        <div class="explore-grid">
-            <div class="explore-card">
-                <p>Input here text about our project</p>
-            </div>
-        </div>
-    </section>
-    
-    <style>
-        .text {
-            padding: 2rem;
-            background-color: #f9f9f9;
-            color: black;
-        }
-        .text h2 {
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-        }
-        .explore-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
-        }
-        .explore-card {
-            background-color: white;
-            border-radius: 8px;
-            overflow: hidden;
-            text-align: center;
-            padding: 1rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-    
-        .explore-card img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-    
-        .explore-card p {
-            margin-top: 0.5rem;
-            font-size: 0.9rem;
-        }
-    </style>
-    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Sickada · 2024. Tous droits réservés.</p>
+    </footer>
 
 </body>
 </html>
