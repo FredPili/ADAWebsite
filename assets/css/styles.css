@@ -200,37 +200,35 @@ footer {
 
 /* Sticky Banner */
 .sticky-banner {
-  position: fixed;
-  top: 0;
-  left: 0;
+  display: flex; /* Enable flexbox */
+  align-items: center; /* Vertically center content */
+  justify-content: space-between; /* Spread items evenly with space between them */
   width: 100%; /* Full width */
-  background-color: #141225; /* Dark background */
+  height: 100px; /* Set banner height */
+  background-color: #2a2a2a; /* Dark background */
   color: #ffffff; /* White text */
-  display: flex; /* Flex layout for aligning items */
-  align-items: center; /* Center items vertically */
-  justify-content: space-between; /* Space between items */
-  padding: 0.5rem 2rem; /* Padding for spacing */
-  z-index: 1000; /* Ensure the banner stays on top */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Optional shadow */
+  padding: 0 2rem; /* Add horizontal padding */
+  box-sizing: border-box; /* Ensure padding is included in width/height calculations */
 }
 
-/* Logo */
-.sticky-banner .logo {
-  height: 50px; /* Adjust as needed */
-  margin-right: 1rem; /* Space between logo and text */
+.banner-content {
+  display: flex; /* Enable flexbox */
+  align-items: center; /* Vertically align items */
 }
 
-/* Banner Text */
-.sticky-banner h1 {
-  font-size: 1.5rem; /* Adjust font size */
-  margin: 0; /* Remove margin */
-  color: #ffffff;
+.banner-content .logo {
+  margin-right: 1rem; /* Add space between the logo and text */
+  height: 60px; /* Adjust the logo size */
 }
 
-.sticky-banner span {
-  font-size: 1rem; /* Subtitle font size */
-  color: #cccccc; /* Lighter color for subtitle */
-  margin-left: auto; /* Push to the right */
+.banner-content h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.banner-content span {
+  font-size: 1rem;
+  opacity: 0.8; /* Optional: Make subtitle slightly faded */
 }
 
 @media print, screen and (max-width: 960px) {
