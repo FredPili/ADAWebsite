@@ -59,14 +59,19 @@
             gap: 1.5rem;
             padding: 1rem 2rem;
             border-bottom: 1px solid #ddd;
-            font-size: 0.9rem;
+            font-size: 1.1rem; /* Increased font size */
         }
 
         nav a {
             color: black;
             text-decoration: none;
             font-weight: bold;
-            padding-bottom: 0.5rem;
+            padding-bottom: 0.7rem; /* Slightly more padding for better spacing */
+            transition: color 0.2s ease-in-out; /* Smooth transition for hover effect */
+        }
+
+        nav a:hover {
+            color: red; /* Keeps the hover effect */
         }
 
         nav a.active {
