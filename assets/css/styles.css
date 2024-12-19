@@ -237,17 +237,23 @@ footer {
 /* Sidebar Styles */
 .sidebar {
   position: fixed;
-  top: 100px; /* Adjusted for spacing */
-  right: 5px; /* Move the sidebar to the right */
+  top: 80px; /* Adjusted for spacing */
+  left: 5px; /* Adjusted to fit the left side of the page */
   width: 250px; /* Sidebar width */
   background-color: #f1f1f1;
-  padding: 15px;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Shadow on the left of the sidebar */
-  z-index: 10; /* Ensure it stays on top */
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 10;
 }
 
+/* Left Bar Styling */
+.toc-bar {
+  width: 5px;
+  background-color: #007bff; /* Blue color */
+  margin-right: 15px;
+}
 
-/* List Style */
+/* Sidebar TOC */
 .sidebar ul {
   list-style-type: none;
   padding: 0;
@@ -257,7 +263,6 @@ footer {
   margin: 10px 0;
 }
 
-/* Links Style */
 .sidebar ul li a {
   text-decoration: none;
   color: #333;
@@ -265,6 +270,13 @@ footer {
 
 .sidebar ul li a:hover {
   color: #007BFF;
+}
+
+/* Active Link Styling */
+.sidebar ul li a.active {
+  color: #007BFF;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
 /* Main Content Adjustment */
