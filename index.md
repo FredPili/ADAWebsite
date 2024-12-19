@@ -1,8 +1,8 @@
 ---
 layout: default
 title: "Sickada"
-banner_header: "How You Became Smarter ..."
-subtitle: "... or how has the volume of educational content changed over time"
+banner_header: "How You Became Smarter ...."
+subtitle: ".... or how has the volume of educational content changed over time"
 ---
 
 ## **Introduction**
