@@ -96,6 +96,44 @@ Below is an interactive Plotly chart embedded directly into this Markdown file u
   <p style="text-align: center;">Figure 1: Dummy Plotly Chart</p>
 </div>
 
+### **Plotly Chart with Text on the Right**
+<div style="display: flex; align-items: center; margin-bottom: 2rem;">
+  <!-- Plot -->
+  <div style="flex: 1; margin-right: 1rem;">
+    <iframe src="assets/plot.html" width="100%" height="500" frameborder="0"></iframe>
+  </div>
+  <!-- Text -->
+  <div style="flex: 1;">
+    <h3>Insights</h3>
+    <p>
+      This Plotly chart highlights the performance of various categories over time. Use it to analyze trends and identify key areas for improvement or further study.
+    </p>
+    <p>
+      The data indicates significant growth in Q3, with certain categories outperforming others due to targeted strategies.
+    </p>
+  </div>
+</div>
+
+---
+
+### **Plotly Chart with Text on the Left**
+<div style="display: flex; align-items: center; margin-bottom: 2rem;">
+  <!-- Text -->
+  <div style="flex: 1; margin-right: 1rem;">
+    <h3>Analysis</h3>
+    <p>
+      This visualization compares multiple metrics across different months. It reveals seasonal trends and helps in understanding variations in performance across quarters.
+    </p>
+    <p>
+      The results emphasize the importance of summer promotions and their impact on overall sales growth.
+    </p>
+  </div>
+  <!-- Plot -->
+  <div style="flex: 1;">
+    <iframe src="assets/plot.html" width="100%" height="500" frameborder="0"></iframe>
+  </div>
+</div>
+
 ---
 
 ## **Embedded Videos**
@@ -106,7 +144,7 @@ You can embed videos directly into your report using HTML. For example:
   <iframe
     width="560"
     height="315"
-    src="https://www.youtube.com/watch?v=Ycz5JIy51ww"
+    src="https://www.youtube.com/embed/watch?v=tiEPzEp2T4A"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen
