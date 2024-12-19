@@ -17,9 +17,11 @@ title: "Sickada"
     - [Centered Image](#centered-image)
     - [Image with Text Alignment](#image-with-text-alignment)
 4. [Deep Dive Analysis](#deep-dive-analysis)
-5. [Conclusions](#conclusions)
-6. [Next Steps & Recommendations](#next-steps-and-recommendations)
-7. [Additional Notes](#additional-notes)
+5. [Interactive Plotly Visualization](#interactive-plotly-visualization)
+6. [Embedded Videos](#embedded-videos)
+7. [Conclusions](#conclusions)
+8. [Next Steps & Recommendations](#next-steps-and-recommendations)
+9. [Additional Notes](#additional-notes)
 
 ---
 
@@ -29,7 +31,7 @@ title: "Sickada"
 **Example:**
 *Have you ever wondered why sales spike during certain months? This report uncovers trends, patterns, and insights from our latest dataset.*
 
-
+---
 
 ## **Key Findings**
 ### **Top Insights:**
@@ -39,13 +41,14 @@ title: "Sickada"
 
 > Use **bold text** for key points and *italics* for clarifications.
 
-
+---
 
 ## **Visual Insights**
 ### **Centered Image**
 ![Sales Trends Chart](assets/banner.jpeg)
 > *Figure 1: Sales trends across quarters.*
 
+---
 
 ### **Image with Text Alignment**
 #### Image to the Left
@@ -85,6 +88,34 @@ Break down each key finding with deeper analysis, supported by visuals and data 
 
 ---
 
+## **Interactive Plotly Visualization**
+Below is an interactive Plotly chart embedded directly into this Markdown file using HTML:
+
+<div>
+  <iframe src="assets/plot.html" width="100%" height="500" frameborder="0"></iframe>
+  <p style="text-align: center;">Figure 1: Dummy Plotly Chart</p>
+</div>
+
+---
+
+## **Embedded Videos**
+You can embed videos directly into your report using HTML. For example:
+
+### **Marketing Campaign Video**
+<div style="text-align: center;">
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/watch?v=Ycz5JIy51ww"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+</div>
+<p style="text-align: center;">Figure 3: Overview of our marketing campaign strategy.</p>
+
+---
+
 ## **Conclusions**
 > *In summary, our analysis shows that targeted promotions in urban areas drive significant sales growth. However, maintaining momentum after campaigns remains a challenge.*
 
@@ -106,4 +137,3 @@ Break down each key finding with deeper analysis, supported by visuals and data 
 ---
 
 *Thank you for reading! Feel free to reach out for further information or collaboration opportunities.*
-</div>
