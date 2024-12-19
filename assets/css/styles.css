@@ -233,7 +233,7 @@ footer {
     position: fixed;
     top: 90px; /* Positions the sidebar at the top from the start */
     flex: 0 0 15%;
-    max-width: 350px; /* Limit the maximum width */
+    max-width: 250px; /* Limit the maximum width */
     background-color: #ffffff;
     padding: 15px;
     border-radius: 8px;
