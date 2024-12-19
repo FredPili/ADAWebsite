@@ -1,26 +1,8 @@
 ---
-layout: custom
-title: "Human vs AI Analysis"
----
-
-# Data Analysis Report
-
-## **Main Title of the Report**
-> *A concise and engaging headline summarizing the analysis.*
-
----
-
-## **Table of Contents**
-1. [Introduction](#introduction)
-2. [Key Findings](#key-findings)
-3. [Visual Insights](#visual-insights)
-    - [Centered Image](#centered-image)
-    - [Image with Text Alignment](#image-with-text-alignment)
-4. [Deep Dive Analysis](#deep-dive-analysis)
-5. [Conclusions](#conclusions)
-6. [Next Steps & Recommendations](#next-steps-and-recommendations)
-7. [Additional Notes](#additional-notes)
-
+layout: default
+title: "Sickada"
+banner_header: "How You Became Smarter ...."
+subtitle: ".... or how has the volume of educational content changed over time"
 ---
 
 ## **Introduction**
@@ -43,7 +25,7 @@ title: "Human vs AI Analysis"
 
 ## **Visual Insights**
 ### **Centered Image**
-![Sales Trends Chart](assets/sales-trends-chart.jpeg)
+![Sales Trends Chart](assets/banner.jpeg)
 > *Figure 1: Sales trends across quarters.*
 
 ---
@@ -51,7 +33,7 @@ title: "Human vs AI Analysis"
 ### **Image with Text Alignment**
 #### Image to the Left
 <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
-    <img src="assets/urban-performance.jpeg" alt="Urban Market Performance" width="40%" style="margin-right: 1rem;">
+    <img src="assets/profile.jpeg" alt="Urban Market Performance" width="40%" style="margin-right: 1rem;">
     <p>
         **Observation:** *Product A demonstrated remarkable performance in urban markets during the campaign. This suggests a need to further target similar demographics for sustained growth.*
     </p>
@@ -64,7 +46,7 @@ title: "Human vs AI Analysis"
     <p style="margin-right: 1rem;">
         **Insight:** *Website traffic surged after the new campaign launch, highlighting strong audience engagement. Future campaigns can capitalize on this trend to drive conversions.*
     </p>
-    <img src="assets/website-traffic.jpeg" alt="Website Traffic Growth" width="40%">
+    <img src="assets/profile.jpeg" alt="Website Traffic Growth" width="40%">
 </div>
 
 ---
@@ -86,6 +68,72 @@ Break down each key finding with deeper analysis, supported by visuals and data 
 
 ---
 
+## **Interactive Plotly Visualization**
+Below is an interactive Plotly chart embedded directly into this Markdown file using HTML:
+
+<div>
+  <iframe src="assets/plot.html" width="100%" height="500" frameborder="0"></iframe>
+  <p style="text-align: center;">Figure 1: Dummy Plotly Chart</p>
+</div>
+
+### **Plotly Chart with Text on the Right**
+<div style="display: flex; align-items: center; margin-bottom: 2rem;">
+  <!-- Plot -->
+  <div style="flex: 1; margin-right: 1rem;">
+    <iframe src="assets/plot.html" width="100%" height="500" frameborder="0"></iframe>
+  </div>
+  <!-- Text -->
+  <div style="flex: 1;">
+    <h3>Insights</h3>
+    <p>
+      This Plotly chart highlights the performance of various categories over time. Use it to analyze trends and identify key areas for improvement or further study.
+    </p>
+    <p>
+      The data indicates significant growth in Q3, with certain categories outperforming others due to targeted strategies.
+    </p>
+  </div>
+</div>
+
+---
+
+### **Plotly Chart with Text on the Left**
+<div style="display: flex; align-items: center; margin-bottom: 2rem;">
+  <!-- Text -->
+  <div style="flex: 1; margin-right: 1rem;">
+    <h3>Analysis</h3>
+    <p>
+      This visualization compares multiple metrics across different months. It reveals seasonal trends and helps in understanding variations in performance across quarters.
+    </p>
+    <p>
+      The results emphasize the importance of summer promotions and their impact on overall sales growth.
+    </p>
+  </div>
+  <!-- Plot -->
+  <div style="flex: 1;">
+    <iframe src="assets/plot.html" width="100%" height="500" frameborder="0"></iframe>
+  </div>
+</div>
+
+---
+
+## **Embedded Videos**
+You can embed videos directly into your report using HTML. For example:
+
+### **Marketing Campaign Video**
+<div style="text-align: center;">
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/tiEPzEp2T4A"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+</div>
+<p style="text-align: center;">Figure 3: Overview of our marketing campaign strategy.</p>
+
+---
+
 ## **Conclusions**
 > *In summary, our analysis shows that targeted promotions in urban areas drive significant sales growth. However, maintaining momentum after campaigns remains a challenge.*
 
@@ -100,11 +148,10 @@ Break down each key finding with deeper analysis, supported by visuals and data 
 ---
 
 ## **Additional Notes**
-- **Dataset:** [View Dataset](#)
+- **Dataset:** [View Dataset](https://github.com/epfl-dlab/YouNiverse)
 - **Tools Used:** *Python, pandas, Matplotlib*
 - **References:** Internal sales records and web traffic data.
 
 ---
 
 *Thank you for reading! Feel free to reach out for further information or collaboration opportunities.*
-</div>
