@@ -27,11 +27,17 @@ header {
   align-items: center;
   padding: 10px 20px;
   background-color: #1a1a1a;
+  margin-bottom: 20px;
+
 }
 
 header img {
-  height: 50px;
+  height: 100px; /* Adjust this to the desired height */
+  width: auto;   /* Maintain aspect ratio */
+  margin: 0 auto; /* Center the image */
+  display: block; /* Ensure it's treated as a block element */
 }
+
 
 header nav ul {
   list-style: none;
@@ -76,9 +82,12 @@ section h2 {
   margin-bottom: 20px;
 }
 
-section p {
-  margin-bottom: 20px;
+section {
+  padding: 40px 20px;
+  max-width: 800px; /* Limit the width for readability */
+  margin: 0 auto; /* Center the section content */
 }
+
 
 blockquote {
   background: #f3f3f3;
@@ -89,8 +98,9 @@ blockquote {
 
 /* Footer */
 footer {
+  margin-top: 20px;
+  padding: 10px 20px;
   background-color: #1a1a1a;
   color: white;
   text-align: center;
-  padding: 10px;
 }
