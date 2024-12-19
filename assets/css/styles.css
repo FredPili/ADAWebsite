@@ -237,12 +237,14 @@ footer {
 
 /* Sidebar Styles */
 .sidebar {
-  position: fixed;
-  top: 100px; /* Adjusted for spacing */
-  right: 5px; /* Move the sidebar to the right */
-  background-color: #ffffff;
-  padding: 15px;
-  z-index: 10; /* Ensure it stays on top */
+  position: fixed; /* Keeps the sidebar fixed on the screen */
+  top: 100px; /* Adjusted for spacing from the top */
+  right: 5px; /* Moves the sidebar slightly inward from the right edge */
+  width: 250px; /* Sets the width of the sidebar */
+  height: calc(100vh - 120px); /* Height adjusted dynamically to fit the viewport */
+  background-color: #ffffff; /* Background color for the sidebar */
+  padding: 15px; /* Inner space between content and the border of the sidebar */
+  z-index: 10; /* Ensures it stays above other elements */
   transition: width 0.3s ease, visibility 0.3s ease; /* Smooth resizing and visibility changes */
 }
 
