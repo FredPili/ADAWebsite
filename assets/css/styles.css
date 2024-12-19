@@ -1,313 +1,54 @@
+/* General Layout */
 body {
   background-color: #fff;
-  padding: 20px; /* Adjust padding for smaller screens */
+  padding: 20px; /* Reduced padding for smaller screens */
   font-size: 17px;
   line-height: 1.5;
   font-family: 'Montserrat', sans-serif;
   color: #595959;
   font-weight: 400;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color:#222;
-  margin:0 0 20px;
-}
-
-p, ul, ol, table, pre, dl {
-  margin:0 0 20px;
-}
-
-h1, h2, h3 {
-  line-height:1.1;
-}
-
-h1 {
-  font-size:28px;
-  font-weight: 500;
-}
-
-h2 {
-  color:#393939;
-  font-weight: 500;
-}
-
-h3, h4, h5, h6 {
-  color:#494949;
-  font-weight: 500;
-}
-
-a {
-  color:#39c;
-  text-decoration:none;
-}
-
-a:hover {
-  color:#069;
-}
-
-a small {
-  font-size:11px;
-  color:#777;
-  margin-top:-0.3em;
-  display:block;
-}
-
-a:hover small {
-  color:#777;
+  box-sizing: border-box; /* Ensure padding and border are included in width calculations */
 }
 
 .wrapper {
-  max-width: 1200px; /* Limit the maximum width for large screens */
-  margin: 0 auto; /* Center the content horizontally */
-  padding: 0 20px; /* Add padding for smaller screens */
+  max-width: 1200px; /* Restrict the maximum width of the wrapper */
+  margin: 0 auto; /* Center content */
+  padding: 0 20px; /* Add horizontal padding for smaller screens */
 }
 
-blockquote {
-  border-left:1px solid #e5e5e5;
-  margin:0;
-  padding:0 0 0 20px;
-  font-style:italic;
-}
-
-code, pre {
-  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
-  color:#333;
-}
-
-pre {
-  padding:8px 15px;
-  background: #f8f8f8;
-  border-radius:5px;
-  border:1px solid #e5e5e5;
-  overflow-x: auto;
-}
-
-table {
-  width:100%;
-  border-collapse:collapse;
-}
-
-th, td {
-  text-align:left;
-  padding:5px 10px;
-  border-bottom:1px solid #e5e5e5;
-}
-
-dt {
-  color:#444;
-  font-weight:500;
-}
-
-th {
-  color:#444;
-}
-
-img {
-  max-width:100%;
-}
-
-
-
-header {
-  width: 100%; /* Make the header span the full width of the page */
-  float: none; /* Remove float */
-  position: static; /* Allow the header to scroll with the content */
-  text-align: center; /* Center the content */
-  padding: 20px 0; /* Add some padding */
-}
-
-header ul {
-  list-style:none;
-  height:40px;
-  padding:0;
-  background: #f4f4f4;
-  border-radius:5px;
-  border:1px solid #e0e0e0;
-  width:270px;
-}
-
-header li {
-  width:89px;
-  float:left;
-  border-right:1px solid #e0e0e0;
-  height:40px;
-}
-
-header li:first-child a {
-  border-radius:5px 0 0 5px;
-}
-
-header li:last-child a {
-  border-radius:0 5px 5px 0;
-}
-
-header ul a {
-  line-height:1;
-  font-size:11px;
-  color:#999;
-  display:block;
-  text-align:center;
-  padding-top:6px;
-  height:34px;
-}
-
-header ul a:hover {
-  color:#999;
-}
-
-header ul a:active {
-  background-color:#f0f0f0;
-}
-
-strong {
-  color:#222;
-  font-weight:500;
-}
-
-header ul li + li + li {
-  border-right:none;
-  width:89px;
-}
-
-header ul a strong {
-  font-size:14px;
-  display:block;
-  color:#222;
-}
-
-section {
-  width: auto; /* Allow the content to use the available space */
-  float: none; /* Remove float */
-  margin: 0 auto; /* Center the content */
+.main-content {
+  margin: 0; /* Remove unnecessary margins */
   padding: 20px; /* Add padding for readability */
+  box-sizing: border-box; /* Ensure no overflow from padding */
+  width: 100%; /* Allow full use of available space */
 }
 
-small {
-  font-size:11px;
-}
-
-hr {
-  border:0;
-  background:#e5e5e5;
-  height:1px;
-  margin:0 0 20px;
-}
-
-footer {
-  width: 100%; /* Make the footer span the full width of the page */
-  float: none; /* Remove float */
-  position: static; /* Allow the footer to scroll with the content */
-  text-align: center; /* Center the content */
-  padding: 20px 0; /* Add some padding */
-}
-
-/* Sticky Banner */
-.sticky-banner {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%; /* Full width */
-  background-color: #20242c; /* Dark background */
-  color: #ffffff; /* White text */
-  display: flex; /* Flex layout for aligning items */
-  flex-direction: column; /* Stack the text vertically */
-  align-items: center; /* Center items horizontally */
-  justify-content: center; /* Center the content vertically */
-  padding: 8px 2rem; /* Padding for spacing */
-  z-index: 1000; /* Ensure the banner stays on top */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Optional shadow */
-}
-
-/* Banner Title */
-.sticky-banner h1 {
-  font-size: 1.5rem; /* Adjust font size */
-  margin: 0; /* Remove margin */
-  color: #ffffff;
-  text-align: center; /* Ensure the text is centered */
-}
-
-/* Subtitle */
-.sticky-banner .subtitle {
-  font-size: 1rem; /* Slightly smaller font size for the subtitle */
-  margin: 0.5rem 0 0; /* Space between the title and subtitle */
-  color: #b0b0b0; /* Lighter color for the subtitle */
-  text-align: center; /* Center align the subtitle */
-}
-
-/* Sidebar Styles */
+/* Sidebar */
 .sidebar {
   position: fixed;
   top: 100px;
-  right: 10px;
-  width: 250px; /* Default width for larger screens */
-  background-color: #ffffff;
+  right: 5px;
+  width: 250px; /* Default sidebar width */
+  background-color: #f1f1f1;
   padding: 15px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
   z-index: 10;
-  transition: all 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out; /* Smooth resizing */
 }
 
-/* Adjust Sidebar Width */
-@media screen and (max-width: 1200px) {
-  .sidebar {
-    width: 200px; /* Reduce sidebar width on medium-sized screens */
-  }
-
-  .main-content {
-    margin-right: 0; /* Ensure content doesn't overlap with sidebar */
-  }
-}
-
-@media screen and (max-width: 960px) {
-  .sidebar {
-    width: 180px; /* Narrower sidebar for smaller screens */
-  }
-
-  .wrapper {
-    max-width: 960px; /* Adjust wrapper width */
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .sidebar {
-    display: none; /* Hide sidebar on smaller screens */
-  }
-
-  .wrapper {
-    max-width: 768px; /* Adjust wrapper width */
-  }
-
-  .main-content {
-    margin: 0; /* Remove margins to use full width */
-    padding: 20px; /* Maintain padding for readability */
-  }
-}
-
-@media screen and (max-width: 480px) {
-  body {
-    padding: 10px;
-  }
-
-  .wrapper {
-    max-width: 100%; /* Use full width of the screen */
-  }
-
-  .main-content {
-    padding: 15px; /* Smaller padding for very small screens */
-  }
-}
-
+/* TOC Bar */
 .toc-bar {
-  position: absolute;  /* Make it absolute to ensure it stays fixed in the sidebar */
-  top: 50%; /* Move the bar to the vertical middle of the sidebar */
-  left: 0; /* Align the bar to the left */
-  width: 1px; /* Width of the line */
-  background-color: #b9b9b9; /* Color of the bar */
-  height: 90%; /* Set the height to 90% of the sidebar */
-  margin-right: 15px; /* Space between the bar and the TOC */
-  transform: translateY(-50%); /* Move the bar upwards by 50% of its height, effectively centering it */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 1px;
+  background-color: #b9b9b9;
+  height: 90%;
+  margin-right: 15px;
+  transform: translateY(-50%);
 }
 
-/* Sidebar TOC */
+/* Sidebar List */
 .sidebar ul {
   list-style-type: none;
   padding: 0;
@@ -326,107 +67,62 @@ footer {
   color: #007BFF;
 }
 
-
-/* Main Content Adjustment */
-.main-content {
-  margin-right: 0; /* Reset margin on the right side */
-  margin-left: 0; /* Reset margin on the left side */
-  padding: 20px;
-  width: 100%; /* Allow full width for smaller screens */
-  box-sizing: border-box; /* Include padding and border in width calculations */
-}
-
 /* Sticky Button */
 .sticky-button {
   position: fixed;
-  top: 100px; /* Position it at the top */
-  left: 20px; /* Position it to the left */
+  top: 100px;
+  left: 20px;
   padding: 10px 20px;
-  background-color: #ffffff; /* Button color */
-  color: rgb(0, 0, 0); /* Text color */
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
   font-size: 16px;
-  text-decoration: none; /* Remove underline from the link */
-  border-radius: 5px; /* Rounded corners */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
-  z-index: 9999; /* Ensure it stays on top */
-  transition: background-color 0.3s ease; /* Smooth transition on hover */
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  transition: background-color 0.3s ease;
 }
 
 .sticky-button:hover {
-  background-color: #cecece; /* Darker blue on hover */
+  background-color: #cecece;
 }
 
-@media print, screen and (max-width: 960px) {
-
-  div.wrapper {
-    width:auto;
-    margin:0;
-  }
-
-  header, section, footer {
-    float:none;
-    position:static;
-    width:auto;
-  }
-
-  header {
-    padding-right:320px;
-  }
-
-  section {
-    border:1px solid #e5e5e5;
-    border-width:1px 0;
-    padding:20px 0;
-    margin:0 0 20px;
-  }
-
-  header a small {
-    display:inline;
-  }
-
-  header ul {
-    position:absolute;
-    right:50px;
-    top:52px;
+/* Responsive Adjustments */
+@media screen and (max-width: 1200px) {
+  .sidebar {
+    width: 200px; /* Adjust sidebar for medium screens */
   }
 }
 
-@media print, screen and (max-width: 720px) {
+@media screen and (max-width: 960px) {
+  .wrapper {
+    max-width: 960px; /* Restrict wrapper width */
+  }
+  .sidebar {
+    width: 180px; /* Narrower sidebar */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    max-width: 100%; /* Use full width for smaller screens */
+  }
+  .sidebar {
+    display: none; /* Hide sidebar on small screens */
+  }
+  .sticky-button {
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
   body {
-    word-wrap:break-word;
+    padding: 10px; /* Reduce padding for very small screens */
   }
-
-  header {
-    padding:0;
-  }
-
-  header ul, header p.view {
-    position:static;
-  }
-
-  pre, code {
-    word-wrap:normal;
-  }
-}
-
-@media print, screen and (max-width: 480px) {
-  body {
-    padding:15px;
-  }
-
-  header ul {
-    width:99%;
-  }
-
-  header li, header ul li + li + li {
-    width:33%;
-  }
-}
-
-@media print {
-  body {
-    padding:0.4in;
-    font-size:12pt;
-    color:#444;
+  .sticky-button {
+    font-size: 14px; /* Reduce button size */
+    padding: 8px 12px;
   }
 }
