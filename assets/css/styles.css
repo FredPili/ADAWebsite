@@ -83,6 +83,43 @@ blockquote {
   font-style:italic;
 }
 
+code, pre {
+  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
+  color:#333;
+}
+
+pre {
+  padding:8px 15px;
+  background: #f8f8f8;
+  border-radius:5px;
+  border:1px solid #e5e5e5;
+  overflow-x: auto;
+}
+
+table {
+  width:100%;
+  border-collapse:collapse;
+}
+
+th, td {
+  text-align:left;
+  padding:5px 10px;
+  border-bottom:1px solid #e5e5e5;
+}
+
+dt {
+  color:#444;
+  font-weight:500;
+}
+
+th {
+  color:#444;
+}
+
+img {
+  max-width:100%;
+}
+
 /* Wrapper (Main Content) */
 .wrapper {
     flex: 0 0 60%; /* 60% of the screen width */
