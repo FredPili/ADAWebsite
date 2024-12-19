@@ -74,20 +74,20 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      const headers = document.querySelectorAll('h1, h2');
+      const headers = document.querySelectorAll('h1, h2');  // Get all headers
       const toc = document.getElementById('toc');
 
-      // Create TOC list
+      // Generate TOC based on headers
       headers.forEach((header, index) => {
         if (header.classList.contains('subtitle') || header.classList.contains('banner-header')) {
-          return;
+          return;  // Skip subtitle and banner header
         }
 
         const listItem = document.createElement('li');
         const link = document.createElement('a');
         link.textContent = header.textContent;
-        link.href = `#${header.id}`;
-        
+        link.href = `#${header.id}`;  // Ensure the link points to the section's ID
+
         listItem.appendChild(link);
         toc.appendChild(listItem);
       });
@@ -95,26 +95,26 @@
       // Add active class when scrolling
       window.addEventListener('scroll', function () {
         const sections = document.querySelectorAll('section');
-        const offsets = [];
-        
-        sections.forEach((section, index) => {
-          offsets.push({
-            id: section.id,
-            top: section.offsetTop,
-            bottom: section.offsetTop + section.offsetHeight,
-            link: toc.querySelectorAll('li')[index].querySelector('a')
-          });
-        });
-
         let current = null;
-        offsets.forEach(offset => {
-          if (window.scrollY >= offset.top - 100 && window.scrollY <= offset.bottom) {
-            current = offset.link;
-            offset.link.classList.add('active');
-          } else {
-            offset.link.classList.remove('active');
+
+        sections.forEach((section) => {
+          const rect = section.getBoundingClientRect();  // Get position of each section
+
+          if (rect.top <= 0 && rect.bottom >= 0) {
+            // This section is in the viewport
+            current = document.querySelector(`a[href="#${section.id}"]`);  // Find the link corresponding to the section
           }
         });
+
+        // Remove the active class from all links
+        document.querySelectorAll('.sidebar a').forEach(link => {
+          link.classList.remove('active');
+        });
+
+        // Add the active class to the current section link
+        if (current) {
+          current.classList.add('active');
+        }
       });
     });
   </script>

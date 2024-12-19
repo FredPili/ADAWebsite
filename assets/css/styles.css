@@ -253,7 +253,7 @@ footer {
   width: 2px; /* Width of the line */
   background-color: #89898a; /* Blue color */
   margin-right: 15px; /* Space between the bar and the TOC */
-  height: 90%; /* Ensure it spans the full height of the sidebar */
+  height: 100%-20px; /* Ensure it spans the full height of the sidebar */
 }
 
 /* Sidebar TOC */
@@ -277,9 +277,9 @@ footer {
 
 /* Active Link Styling */
 .sidebar ul li a.active {
-  color: #007BFF;
+  color: #007BFF; /* Blue color */
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.1rem; /* Slightly bigger text */
 }
 
 /* Main Content Adjustment */
