@@ -256,5 +256,51 @@
         </div>
     </section>
 
+    <section class="text">
+        <h2> A little bit about this project </h2>
+        <div class="explore-grid">
+            <div class="explore-card">
+                <p>Input here text about our project</p>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+        .text {
+            padding: 2rem;
+            background-color: #f9f9f9;
+            color: black;
+        }
+        .text h2 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        .explore-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        .explore-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            padding: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    
+        .explore-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    
+        .explore-card p {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+    </style>
+
 </body>
 </html>
