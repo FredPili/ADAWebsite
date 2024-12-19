@@ -91,31 +91,6 @@
         listItem.appendChild(link);
         toc.appendChild(listItem);
       });
-  
-      // Add active class when scrolling
-      window.addEventListener('scroll', function () {
-        const sections = document.querySelectorAll('section');
-        let current = null;
-  
-        // Loop through each section to check if it's in the viewport
-        sections.forEach((section) => {
-          const rect = section.getBoundingClientRect();  // Get position of each section
-          
-          if (rect.top <= 0 && rect.bottom >= 0) {
-            current = document.querySelector(`a[href="#${section.id}"]`);  // Find the link corresponding to the section
-          }
-        });
-  
-        // Remove the active class from all links
-        document.querySelectorAll('.sidebar a').forEach(link => {
-          link.classList.remove('active');
-        });
-  
-        // Add the active class to the current section link
-        if (current) {
-          current.classList.add('active');
-        }
-      });
     });
   </script>
 
