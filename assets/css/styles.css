@@ -232,7 +232,6 @@ footer {
 .sidebar {
     position: fixed;
     top: 90px; /* Positions the sidebar at the top from the start */
-    right: 5px;
     flex: 0 0 10%;
     max-width: 200px; /* Limit the maximum width */
     background-color: #ffffff;
@@ -240,6 +239,12 @@ footer {
     border-radius: 8px;
     overflow-y: auto; /* Allow scrolling for long content */
     box-sizing: border-box;
+    right: -250px; /* Move the sidebar to the right */
+    transition: right 1s ease;
+}
+
+.sidebar:hover {
+  right: 5px; /* Move it into view when hovered */
 }
 
 .sidebar ul {
@@ -258,6 +263,7 @@ footer {
 
 .sidebar ul li a:hover {
   color: #007BFF;
+  transition: color 1s ease;
 }
 
 .toc-bar {
