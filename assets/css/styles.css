@@ -1,8 +1,7 @@
-* {
-  box-sizing: border-box; /* Includes padding and borders in width/height calculations */
-}
 
 body {
+  display: flex; /* Enable Flexbox */
+  flex-direction: row; /* Align items horizontally */
   background-color: #fff;
   padding:50px;
   font-size: 17px;
@@ -231,16 +230,6 @@ footer {
   text-align: center; /* Center align the subtitle */
 }
 
-/* Parent container */
-.body {
-  display: flex; /* Enable Flexbox */
-  flex-direction: row; /* Align items horizontally */
-  width: 100vw; /* Full width of the viewport */
-  height: 100vh; /* Full height of the viewport */
-  gap: 0; /* Remove spacing between children */
-  margin: 0; /* Remove any margins */
-  padding: 0; /* Remove any paddings */
-}
 
 /* Wrapper (Main Content) */
 .wrapper {
