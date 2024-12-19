@@ -1,11 +1,18 @@
-# _config.yml for GitHub Pages
+# _config.yml
+
+# Site Settings
+title: "Data Analysis Presentation"
+description: "Insights and Findings - A detailed breakdown of our analysis"
+theme: jekyll-theme-cayman
 
 # Theme Configuration
-theme: minima
-
-# Layout Settings
 defaults:
   - scope:
       path: "" # Applies to all files
     values:
-      layout: single # Use a single column layout to remove the sidebar
+      layout: default # Full-width content layout
+
+# Additional Settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
