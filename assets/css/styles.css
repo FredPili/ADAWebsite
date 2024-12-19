@@ -304,3 +304,23 @@ footer {
     text-align: center; /* Center align the subtitle */
   }
 
+/* Sticky Button */
+.sticky-button {
+  position: fixed;
+  top: 90; /* Position it at the top */
+  left: 5; /* Position it to the left */
+  flex: 0 0 8%;
+  max-width: 150; /* Limit the maximum width */
+  padding: 10px 20px;
+  background-color: #ffffff; /* Button color */
+  color: rgb(0, 0, 0); /* Text color */
+  font-size: 16px;
+  text-decoration: none; /* Remove underline from the link */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+} 
+
+.sticky-button:hover {
+  background-color: #cecece; /* Darker blue on hover */
+}
+
