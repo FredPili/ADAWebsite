@@ -233,6 +233,24 @@ footer {
     box-sizing: border-box;
 }
 
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.sidebar ul li a:hover {
+  color: #007BFF;
+}
+
 /* Sticky Banner */
 .sticky-banner {
     position: fixed;
