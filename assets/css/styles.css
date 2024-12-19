@@ -13,6 +13,7 @@ align-items: center; /* Center content vertically */
 min-height: 100vh; /* Full viewport height */
 width: 100%; /* Full viewport width */
 background-color: #ffffff; /* Background for visibility */
+padding-top: 60px
  }
 
 /* Wrapper (Main Content) */
@@ -23,7 +24,6 @@ background-color: #ffffff; /* Background for visibility */
     overflow-y: auto; /* Allow scrolling if content overflows */
     border-radius: 8px; /* Rounded corners */
     box-sizing: border-box; /* Include padding in width calculations */
-    margin-top: 70px;
 }
 
 /* Sidebar */
@@ -38,7 +38,6 @@ background-color: #ffffff; /* Background for visibility */
     box-sizing: border-box; /* Include padding in width calculations */
     height: auto; /* Adjusts to content size */
     position: fixed;
-    top: 170px;
 }
 
 /* Banner at the top */
@@ -51,7 +50,7 @@ nav.sticky-banner {
     color: #ffffff; /* White text */
     padding: 10px 20px;
     z-index: 1000;
-    height: 100px
+    height: 60px
 }
 
 nav.sticky-banner h1,
