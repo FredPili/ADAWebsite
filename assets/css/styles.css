@@ -204,12 +204,12 @@ footer {
   top: 0;
   left: 0;
   width: 100%; /* Full width */
-  background-color: #2a2a2a; /* Dark background */
+  background-color: #141225; /* Dark background */
   color: #ffffff; /* White text */
   display: flex; /* Flex layout for aligning items */
   align-items: center; /* Center items vertically */
   justify-content: space-between; /* Space between items */
-  padding: 1rem 2rem; /* Padding for spacing */
+  padding: 0.5rem 2rem; /* Padding for spacing */
   z-index: 1000; /* Ensure the banner stays on top */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Optional shadow */
 }
