@@ -3,7 +3,7 @@ layout: default
 title: Screen Tastes
 ---
 
-# ![Logo](assets/images/logo.png)
+# ![Logo](assets/banner.jpeg)
 
 ## Screen Tastes: The User-Critic Divide in Cinema
 
