@@ -3,29 +3,6 @@ layout: default
 title: "Sickada"
 ---
 
-
-# Data Analysis Report
-
-## **Main Title of the Report**
-> *A concise and engaging headline summarizing the analysis.*
-
----
-
-## **Table of Contents**
-1. [Introduction](#introduction)
-2. [Key Findings](#key-findings)
-3. [Visual Insights](#visual-insights)
-    - [Centered Image](#centered-image)
-    - [Image with Text Alignment](#image-with-text-alignment)
-4. [Deep Dive Analysis](#deep-dive-analysis)
-5. [Interactive Plotly Visualization](#interactive-plotly-visualization)
-6. [Embedded Videos](#embedded-videos)
-7. [Conclusions](#conclusions)
-8. [Next Steps & Recommendations](#next-steps-and-recommendations)
-9. [Additional Notes](#additional-notes)
-
----
-
 ## **Introduction**
 > A brief introduction explaining the purpose of the analysis and the key questions being explored. Keep it simple, clear, and engaging.
 
