@@ -120,6 +120,25 @@ img {
   max-width:100%;
 }
 
+hr {
+  border:0;
+  background:#e5e5e5;
+  height:1px;
+  margin:0 0 20px;
+}
+
+small {
+  font-size:11px;
+}
+
+footer {
+  width: 100%; /* Make the footer span the full width of the page */
+  float: none; /* Remove float */
+  position: static; /* Allow the footer to scroll with the content */
+  text-align: center; /* Center the content */
+  padding: 20px 0; /* Add some padding */
+}
+
 /* Wrapper (Main Content) */
 .wrapper {
     flex: 0 0 60%; /* 60% of the screen width */
