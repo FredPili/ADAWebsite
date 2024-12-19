@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box; /* Includes padding and borders in width/height calculations */
+}
+
 body {
   background-color: #fff;
   padding:50px;
@@ -233,6 +237,9 @@ footer {
   flex-direction: row; /* Align items horizontally */
   width: 100vw; /* Full width of the viewport */
   height: 100vh; /* Full height of the viewport */
+  gap: 0; /* Remove spacing between children */
+  margin: 0; /* Remove any margins */
+  padding: 0; /* Remove any paddings */
 }
 
 /* Wrapper (Main Content) */
