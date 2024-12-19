@@ -73,33 +73,47 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      // Select all headers (h1, h2, h3, etc.)
       const headers = document.querySelectorAll('h1, h2');
       const toc = document.getElementById('toc');
-  
-      // Iterate through all headers to create TOC items
+
+      // Create TOC list
       headers.forEach((header, index) => {
-        if (header.classList.contains('subtitle')) {
-          return; //Skip subtitle
+        if (header.classList.contains('subtitle') || header.classList.contains('banner-header')) {
+          return;
         }
-        if (header.classList.contains('banner-header')) {
-          return; //Skip banner header
-        }
+
         const listItem = document.createElement('li');
         const link = document.createElement('a');
-        
-        // Create a unique ID for each header (if it doesn't have one)
-        if (!header.id) {
-          header.id = `toc-${index}`;
-        }
-  
-        // Set the link text and href attribute
         link.textContent = header.textContent;
         link.href = `#${header.id}`;
-  
-        // Append the link to the list item, and the list item to the TOC
+        
         listItem.appendChild(link);
         toc.appendChild(listItem);
+      });
+
+      // Add active class when scrolling
+      window.addEventListener('scroll', function () {
+        const sections = document.querySelectorAll('section');
+        const offsets = [];
+        
+        sections.forEach((section, index) => {
+          offsets.push({
+            id: section.id,
+            top: section.offsetTop,
+            bottom: section.offsetTop + section.offsetHeight,
+            link: toc.querySelectorAll('li')[index].querySelector('a')
+          });
+        });
+
+        let current = null;
+        offsets.forEach(offset => {
+          if (window.scrollY >= offset.top - 100 && window.scrollY <= offset.bottom) {
+            current = offset.link;
+            offset.link.classList.add('active');
+          } else {
+            offset.link.classList.remove('active');
+          }
+        });
       });
     });
   </script>
