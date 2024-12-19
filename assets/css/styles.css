@@ -1,7 +1,7 @@
 body {
   background-color: #fff;
   padding:50px;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 1.5;
   /* font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
   font-family: 'Montserrat', sans-serif;
@@ -241,7 +241,7 @@ footer {
   right: 5px; /* Move the sidebar to the right */
   width: 250px; /* Sidebar width */
   background-color: #f1f1f1;
-  padding: 20px;
+  padding: 15px;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Shadow on the left of the sidebar */
   z-index: 10; /* Ensure it stays on top */
 }
