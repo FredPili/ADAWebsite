@@ -38,7 +38,7 @@ background-color: #ffffff; /* Background for visibility */
     box-sizing: border-box; /* Include padding in width calculations */
     height: auto; /* Adjusts to content size */
     position: fixed;
-    margin-top: 70px;
+    top: 170px;
 }
 
 /* Banner at the top */
@@ -51,6 +51,7 @@ nav.sticky-banner {
     color: #ffffff; /* White text */
     padding: 10px 20px;
     z-index: 1000;
+    height: 100px
 }
 
 nav.sticky-banner h1,
