@@ -38,8 +38,7 @@ background-color: #ffffff; /* Background for visibility */
     box-sizing: border-box; /* Include padding in width calculations */
     height: auto; /* Adjusts to content size */
     position: fixed;
-    top: 100px;
-    right: 5px;
+    margin-top: 70px;
 }
 
 /* Banner at the top */
