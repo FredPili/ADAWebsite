@@ -10,6 +10,14 @@ body {
   line-height: 1.6;
   color: #333;
   background-color: #f9f9f9;
+  padding: 0 20px; /* Add padding to the body for small screens */
+}
+
+/* Add a container with margin */
+.container {
+  max-width: 1200px; /* Set the maximum width of the content */
+  margin: 0 auto; /* Center the content */
+  padding: 0 20px; /* Add padding inside the container */
 }
 
 /* Header */
@@ -61,8 +69,6 @@ header nav ul li a {
 /* Section */
 section {
   padding: 40px 20px;
-  max-width: 800px;
-  margin: 0 auto;
 }
 
 section h2 {
