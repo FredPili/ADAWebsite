@@ -232,7 +232,7 @@ footer {
 }
 
 /* Parent container */
-.container {
+.body {
   display: flex; /* Enable Flexbox */
   flex-direction: row; /* Align items horizontally */
   width: 100vw; /* Full width of the viewport */
