@@ -253,7 +253,7 @@ footer {
   width: 2px; /* Width of the line */
   background-color: #89898a; /* Blue color */
   margin-right: 15px; /* Space between the bar and the TOC */
-  height: 100%; /* Ensure it spans the full height of the sidebar */
+  height: 90%; /* Ensure it spans the full height of the sidebar */
 }
 
 /* Sidebar TOC */
