@@ -57,14 +57,6 @@ a:hover small {
   color:#777;
 }
 
-.wrapper {
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 20px;
-  box-sizing: border-box; /* Ensure padding and border are included in width calculations */
-}
-
 blockquote {
   border-left:1px solid #e5e5e5;
   margin:0;
@@ -235,17 +227,30 @@ footer {
   text-align: center; /* Center align the subtitle */
 }
 
-/* Sidebar Styles */
+/* Parent container */
+.container {
+  display: flex; /* Enable flexbox */
+  flex-wrap: nowrap; /* Prevent wrapping */
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+}
+
+.wrapper {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box; /* Ensure padding and border are included in width calculations */
+}
+
+/* Sidebar */
 .sidebar {
-  position: fixed; /* Keeps the sidebar fixed on the screen */
-  top: 100px; /* Adjusted for spacing from the top */
-  right: 5px; /* Moves the sidebar slightly inward from the right edge */
-  width: 250px; /* Sets the width of the sidebar */
-  height: calc(100vh - 120px); /* Height adjusted dynamically to fit the viewport */
-  background-color: #ffffff; /* Background color for the sidebar */
-  padding: 15px; /* Inner space between content and the border of the sidebar */
-  z-index: 10; /* Ensures it stays above other elements */
-  transition: width 0.3s ease, visibility 0.3s ease; /* Smooth resizing and visibility changes */
+  flex: 0 0 10%; /* Takes up 10% of the container width */
+  background-color: #ffffff; /* Example background color */
+  padding: 15px; /* Inner padding */
+  box-sizing: border-box; /* Include padding in width calculations */
+  position: relative; /* Ensure it doesn’t overlap with other elements */
+  z-index: 10;
 }
 
 .sidebar.hidden {
