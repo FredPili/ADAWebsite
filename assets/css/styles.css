@@ -216,8 +216,10 @@ footer {
 
 /* Logo */
 .sticky-banner .logo {
-  height: 50px; /* Adjust as needed */
+  height: 100%; /* Full height of the banner */
+  width: auto; /* Keep the aspect ratio */
   margin-right: 1rem; /* Space between logo and text */
+  display: block; /* Ensure it's displayed as block */
 }
 
 /* Banner Text */
@@ -228,6 +230,7 @@ footer {
   text-align: center; /* Ensure the text is centered */
 }
 
+/* Subtitle Text */
 .sticky-banner span {
   font-size: 1rem; /* Subtitle font size */
   color: #cccccc; /* Lighter color for subtitle */
