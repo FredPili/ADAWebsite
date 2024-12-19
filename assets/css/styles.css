@@ -276,6 +276,12 @@ footer {
   color: #007BFF;
 }
 
+/* Active Link Styling */
+.sidebar ul li a.active {
+  color: #007BFF;  /* Change to the color you want */
+  font-weight: bold;
+  font-size: 1.2rem; /* Optionally increase the font size */
+}
 
 /* Main Content Adjustment */
 .main-content {
