@@ -104,10 +104,11 @@ img {
 }
 
 header {
-  width:270px;
-  float:left;
-  position:fixed;
-  -webkit-font-smoothing:subpixel-antialiased;
+  width: 100%; /* Make the header span the full width of the page */
+  float: none; /* Remove float */
+  position: static; /* Allow the header to scroll with the content */
+  text-align: center; /* Center the content */
+  padding: 20px 0; /* Add some padding */
 }
 
 header ul {
@@ -170,9 +171,10 @@ header ul a strong {
 }
 
 section {
-  width:750px;
-  float:right;
-  padding-bottom:50px;
+  width: auto; /* Allow the content to use the available space */
+  float: none; /* Remove float */
+  margin: 0 auto; /* Center the content */
+  padding: 20px; /* Add padding for readability */
 }
 
 small {
@@ -187,11 +189,11 @@ hr {
 }
 
 footer {
-  width:270px;
-  float:left;
-  position:fixed;
-  bottom:50px;
-  -webkit-font-smoothing:subpixel-antialiased;
+  width: 100%; /* Make the footer span the full width of the page */
+  float: none; /* Remove float */
+  position: static; /* Allow the footer to scroll with the content */
+  text-align: center; /* Center the content */
+  padding: 20px 0; /* Add some padding */
 }
 
 @media print, screen and (max-width: 960px) {
