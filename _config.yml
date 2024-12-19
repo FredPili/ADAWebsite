@@ -1,8 +1,6 @@
 # _config.yml
 
 # Site Settings
-title: "Data Analysis Presentation"
-description: "Insights and Findings"
 theme: jekyll-theme-cayman
 
 # Custom CSS for styling
