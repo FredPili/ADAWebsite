@@ -23,6 +23,7 @@ background-color: #ffffff; /* Background for visibility */
     overflow-y: auto; /* Allow scrolling if content overflows */
     border-radius: 8px; /* Rounded corners */
     box-sizing: border-box; /* Include padding in width calculations */
+    margin-top: 70px;
 }
 
 /* Sidebar */
@@ -43,7 +44,7 @@ background-color: #ffffff; /* Background for visibility */
 
 /* Banner at the top */
 nav.sticky-banner {
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%; /* Full width of the screen */
