@@ -216,6 +216,7 @@ footer {
     overflow-y: auto; /* Allow scrolling if content overflows */
     border-radius: 8px; /* Rounded corners */
     box-sizing: border-box; /* Include padding in width calculations */
+    margin: 0 auto;
 }
 
 /* Sidebar */
