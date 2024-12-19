@@ -45,30 +45,36 @@ body {
     box-sizing: border-box;
 }
 
-/* Banner at the top */
-nav.sticky-banner {
+/* Sticky Banner */
+.sticky-banner {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%; /* Full width of the screen */
+    width: 100%; /* Full width */
     background-color: #20242c; /* Dark background */
     color: #ffffff; /* White text */
-    padding: 10px 20px;
-    z-index: 1000;
-    height: 70px
-}
-
-nav.sticky-banner h1,
-nav.sticky-banner h2 {
-  margin: 0;
-  text-align: center;
-}
-
-.banner-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-}
+    display: flex; /* Flex layout for aligning items */
+    flex-direction: column; /* Stack the text vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center the content vertically */
+    padding: 8px 2rem; /* Padding for spacing */
+    z-index: 1000; /* Ensure the banner stays on top */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Optional shadow */
+  }
+  
+  /* Banner Title */
+  .sticky-banner h1 {
+    font-size: 1.5rem; /* Adjust font size */
+    margin: 0; /* Remove margin */
+    color: #ffffff;
+    text-align: center; /* Ensure the text is centered */
+  }
+  
+  /* Subtitle */
+  .sticky-banner .subtitle {
+    font-size: 1rem; /* Slightly smaller font size for the subtitle */
+    margin: 0.5rem 0 0; /* Space between the title and subtitle */
+    color: #b0b0b0; /* Lighter color for the subtitle */
+    text-align: center; /* Center align the subtitle */
+  }
 
