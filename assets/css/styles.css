@@ -234,22 +234,21 @@ footer {
 /* Sidebar Styles */
 .sidebar {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 250px; /* Reduced width */
+  top: 20;
+  right: 20; /* Move the sidebar to the right */
+  width: 250px;
   background-color: #f1f1f1;
   padding: 20px;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-  height: 100vh; /* Full height */
-  margin-right: 20px; /* Space between content and sidebar */
-  z-index: 10; /* Ensure it is above content */
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Shadow on the left of the sidebar */
 }
 
+/* Sidebar Heading */
 .sidebar h3 {
   font-size: 18px;
   margin-bottom: 20px;
 }
 
+/* List Style */
 .sidebar ul {
   list-style-type: none;
   padding: 0;
@@ -259,6 +258,7 @@ footer {
   margin: 10px 0;
 }
 
+/* Links Style */
 .sidebar ul li a {
   text-decoration: none;
   color: #333;
@@ -268,21 +268,17 @@ footer {
   color: #007BFF;
 }
 
-/* Content */
-.wrapper {
-  margin-left: 270px; /* Added space for sidebar */
+/* Main Content Adjustment */
+.main-content {
+  margin-right: 270px; /* Add space to the right side for the sidebar */
   padding: 20px;
 }
 
-/* Left Bar Style */
-.left-bar {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 5px;
-  height: 100vh;
-  background-color: #333;
-  z-index: 5;
+
+/* Main Content */
+.main-content {
+  margin-left: 270px; /* Space for the sidebar */
+  padding: 20px;
 }
 
 @media print, screen and (max-width: 960px) {
