@@ -1,89 +1,205 @@
 body {
   background-color: #fff;
-  padding: 20px; /* Adjust padding for smaller screens */
+  padding:50px;
   font-size: 17px;
   line-height: 1.5;
+  /* font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
   font-family: 'Montserrat', sans-serif;
-  color: #595959;
-  font-weight: 400;
-  box-sizing: border-box; /* Ensure padding and border are included in width calculations */
+  color:#595959;
+  font-weight:400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color:#222;
+  margin:0 0 20px;
+}
+
+p, ul, ol, table, pre, dl {
+  margin:0 0 20px;
+}
+
+h1, h2, h3 {
+  line-height:1.1;
+}
+
+h1 {
+  font-size:28px;
+  font-weight: 500;
+}
+
+h2 {
+  color:#393939;
+  font-weight: 500;
+}
+
+h3, h4, h5, h6 {
+  color:#494949;
+  font-weight: 500;
+}
+
+a {
+  color:#39c;
+  text-decoration:none;
+}
+
+a:hover {
+  color:#069;
+}
+
+a small {
+  font-size:11px;
+  color:#777;
+  margin-top:-0.3em;
+  display:block;
+}
+
+a:hover small {
+  color:#777;
 }
 
 .wrapper {
-  max-width: 1200px; /* Restrict the maximum width of the wrapper */
-  margin: 0 auto; /* Center content */
-  padding: 0 20px; /* Add horizontal padding for smaller screens */
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box; /* Ensure padding and border are included in width calculations */
 }
 
-.main-content {
-  margin: 0; /* Remove unnecessary margins */
+blockquote {
+  border-left:1px solid #e5e5e5;
+  margin:0;
+  padding:0 0 0 20px;
+  font-style:italic;
+}
+
+code, pre {
+  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
+  color:#333;
+}
+
+pre {
+  padding:8px 15px;
+  background: #f8f8f8;
+  border-radius:5px;
+  border:1px solid #e5e5e5;
+  overflow-x: auto;
+}
+
+table {
+  width:100%;
+  border-collapse:collapse;
+}
+
+th, td {
+  text-align:left;
+  padding:5px 10px;
+  border-bottom:1px solid #e5e5e5;
+}
+
+dt {
+  color:#444;
+  font-weight:500;
+}
+
+th {
+  color:#444;
+}
+
+img {
+  max-width:100%;
+}
+
+header {
+  width: 100%; /* Make the header span the full width of the page */
+  float: none; /* Remove float */
+  position: static; /* Allow the header to scroll with the content */
+  text-align: center; /* Center the content */
+  padding: 20px 0; /* Add some padding */
+}
+
+header ul {
+  list-style:none;
+  height:40px;
+  padding:0;
+  background: #f4f4f4;
+  border-radius:5px;
+  border:1px solid #e0e0e0;
+  width:270px;
+}
+
+header li {
+  width:89px;
+  float:left;
+  border-right:1px solid #e0e0e0;
+  height:40px;
+}
+
+header li:first-child a {
+  border-radius:5px 0 0 5px;
+}
+
+header li:last-child a {
+  border-radius:0 5px 5px 0;
+}
+
+header ul a {
+  line-height:1;
+  font-size:11px;
+  color:#999;
+  display:block;
+  text-align:center;
+  padding-top:6px;
+  height:34px;
+}
+
+header ul a:hover {
+  color:#999;
+}
+
+header ul a:active {
+  background-color:#f0f0f0;
+}
+
+strong {
+  color:#222;
+  font-weight:500;
+}
+
+header ul li + li + li {
+  border-right:none;
+  width:89px;
+}
+
+header ul a strong {
+  font-size:14px;
+  display:block;
+  color:#222;
+}
+
+section {
+  width: auto; /* Allow the content to use the available space */
+  float: none; /* Remove float */
+  margin: 0 auto; /* Center the content */
   padding: 20px; /* Add padding for readability */
-  box-sizing: border-box; /* Ensure no overflow from padding */
-  width: 100%; /* Allow full use of available space */
 }
 
-/* Sidebar */
-.sidebar {
-  position: fixed;
-  top: 100px;
-  right: 0;
-  width: 250px; /* Default sidebar width */
-  background-color: #f1f1f1;
-  padding: 15px;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-  z-index: 10;
-  transition: width 0.3s ease-in-out; /* Smooth resizing */
+small {
+  font-size:11px;
 }
 
-/* TOC Bar */
-.toc-bar {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 1px;
-  background-color: #b9b9b9;
-  height: 90%;
-  margin-right: 15px;
-  transform: translateY(-50%);
+hr {
+  border:0;
+  background:#e5e5e5;
+  height:1px;
+  margin:0 0 20px;
 }
 
-/* Sidebar List */
-.sidebar ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.sidebar ul li {
-  margin: 10px 0;
-}
-
-.sidebar ul li a {
-  text-decoration: none;
-  color: #333;
-}
-
-.sidebar ul li a:hover {
-  color: #007BFF;
-}
-
-/* Sticky Button */
-.sticky-button {
-  position: fixed;
-  top: 100px;
-  left: 20px;
-  padding: 10px 20px;
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  font-size: 16px;
-  text-decoration: none;
-  border-radius: 5px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 999;
-  transition: background-color 0.3s ease;
-}
-
-.sticky-button:hover {
-  background-color: #cecece;
+footer {
+  width: 100%; /* Make the footer span the full width of the page */
+  float: none; /* Remove float */
+  position: static; /* Allow the footer to scroll with the content */
+  text-align: center; /* Center the content */
+  padding: 20px 0; /* Add some padding */
 }
 
 /* Sticky Banner */
@@ -119,46 +235,121 @@ body {
   text-align: center; /* Center align the subtitle */
 }
 
-/* Responsive Adjustments */
-@media screen and (max-width: 1200px) {
-  .wrapper {
-    padding: 0 10px; /* Add more flexible padding */
-  }
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  top: 100px; /* Adjusted for spacing */
+  right: 5px; /* Move the sidebar to the right */
+  background-color: #ffffff;
+  padding: 15px;
+  z-index: 10; /* Ensure it stays on top */
+  transition: width 0.3s ease, visibility 0.3s ease; /* Smooth resizing and visibility changes */
+}
 
-  .sidebar {
-    width: 200px; /* Adjust sidebar for medium screens */
-  }
+.sidebar.hidden {
+  width: 0;
+  padding: 0;
+  visibility: hidden; /* Hide the sidebar if too small */
+}
+
+.toc-bar {
+  position: absolute;  /* Make it absolute to ensure it stays fixed in the sidebar */
+  top: 50%; /* Move the bar to the vertical middle of the sidebar */
+  left: 0; /* Align the bar to the left */
+  width: 1px; /* Width of the line */
+  background-color: #b9b9b9; /* Color of the bar */
+  height: 90%; /* Set the height to 90% of the sidebar */
+  margin-right: 15px; /* Space between the bar and the TOC */
+  transform: translateY(-50%); /* Move the bar upwards by 50% of its height, effectively centering it */
+}
+
+/* Sidebar TOC */
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.sidebar ul li a:hover {
+  color: #007BFF;
+}
+
+/* Main Content Adjustment */
+.main-content {
+  margin-right: 0px; /* No margin needed on the right side now */
+  margin-left: 270px; /* Add space to the left side for the sidebar */
+  padding: 20px;
+}
+
+/* Sticky Button */
+.sticky-button {
+  position: fixed;
+  top: 100px; /* Position it at the top */
+  left: 20px; /* Position it to the left */
+  padding: 10px 20px;
+  background-color: #ffffff; /* Button color */
+  color: rgb(0, 0, 0); /* Text color */
+  font-size: 16px;
+  text-decoration: none; /* Remove underline from the link */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  z-index: 9999; /* Ensure it stays on top */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.sticky-button:hover {
+  background-color: #cecece; /* Darker blue on hover */
 }
 
 @media screen and (max-width: 960px) {
   .wrapper {
-    max-width: 960px; /* Restrict wrapper width */
+    max-width: 900px;
   }
+
   .sidebar {
-    width: 180px; /* Narrower sidebar */
+    width: 200px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 720px) {
   .wrapper {
-    max-width: 100%; /* Use full width for smaller screens */
+    max-width: 700px;
   }
+
   .sidebar {
-    display: none; /* Hide sidebar on small screens */
+    width: 150px;
   }
-  .sticky-button {
-    bottom: 20px;
-    left: 20px;
-    padding: 10px 15px;
+
+  .sidebar.hidden {
+    visibility: hidden;
+    width: 0;
+    padding: 0;
+  }
+
+  .main-content {
+    margin-left: 0; /* Remove left margin when sidebar is hidden */
   }
 }
 
 @media screen and (max-width: 480px) {
-  body {
-    padding: 10px; /* Reduce padding for very small screens */
+  .wrapper {
+    max-width: 100%; /* Full width for small screens */
+    padding: 10px; /* Reduce padding for smaller screens */
   }
-  .sticky-button {
-    font-size: 14px; /* Reduce button size */
-    padding: 8px 12px;
+
+  .sidebar {
+    display: none; /* Completely hide the sidebar */
+  }
+
+  .main-content {
+    margin: 0; /* Center the content fully when sidebar is hidden */
   }
 }
