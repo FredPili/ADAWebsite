@@ -248,12 +248,13 @@ footer {
 
 .toc-bar {
   position: absolute;  /* Make it absolute to ensure it stays fixed in the sidebar */
-  top: 0;
-  left: 0; /* Align it to the left */
+  top: 50%; /* Move the bar to the vertical middle of the sidebar */
+  left: 0; /* Align the bar to the left */
   width: 2px; /* Width of the line */
-  background-color: #89898a; /* Blue color */
+  background-color: #89898a; /* Color of the bar */
+  height: 90%; /* Set the height to 90% of the sidebar */
   margin-right: 15px; /* Space between the bar and the TOC */
-  height: 100%-20px; /* Ensure it spans the full height of the sidebar */
+  transform: translateY(-50%); /* Move the bar upwards by 50% of its height, effectively centering it */
 }
 
 /* Sidebar TOC */
