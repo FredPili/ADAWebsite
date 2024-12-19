@@ -5,7 +5,7 @@ banner_header: "How You Became Smarter ...."
 subtitle: ".... or how has the volume of educational content changed over time"
 ---
 
-## **Introduction**
+## **Introduction {#introduction}**
 > A brief introduction explaining the purpose of the analysis and the key questions being explored. Keep it simple, clear, and engaging.
 
 **Example:**
@@ -13,7 +13,7 @@ subtitle: ".... or how has the volume of educational content changed over time"
 
 ---
 
-## **Key Findings**
+## **Key Findings {#key-findings}**
 ### **Top Insights:**
 - **Sales Growth:** Sales increased by **25%** in Q3 compared to Q2.
 - **Product Performance:** **Product A** outperformed others in urban markets.
@@ -23,7 +23,7 @@ subtitle: ".... or how has the volume of educational content changed over time"
 
 ---
 
-## **Visual Insights**
+## **Visual Insights {#visial-insight}**
 ### **Centered Image**
 ![Sales Trends Chart](assets/banner.jpeg)
 > *Figure 1: Sales trends across quarters.*
@@ -51,7 +51,7 @@ subtitle: ".... or how has the volume of educational content changed over time"
 
 ---
 
-## **Deep Dive Analysis**
+## **Deep Dive Analysis {#deep-dive-analysis}**
 Break down each key finding with deeper analysis, supported by visuals and data tables.
 
 ### **Sales Analysis**
@@ -68,7 +68,7 @@ Break down each key finding with deeper analysis, supported by visuals and data 
 
 ---
 
-## **Interactive Plotly Visualization**
+## **Interactive Plotly Visualization {#interactive-plotly-visualization}**
 Below is an interactive Plotly chart embedded directly into this Markdown file using HTML:
 
 <div>
@@ -116,7 +116,7 @@ Below is an interactive Plotly chart embedded directly into this Markdown file u
 
 ---
 
-## **Embedded Videos**
+## **Embedded Videos {#embedded-videos}**
 You can embed videos directly into your report using HTML. For example:
 
 ### **Marketing Campaign Video**
@@ -134,12 +134,12 @@ You can embed videos directly into your report using HTML. For example:
 
 ---
 
-## **Conclusions**
+## **Conclusions {#conclusions}**
 > *In summary, our analysis shows that targeted promotions in urban areas drive significant sales growth. However, maintaining momentum after campaigns remains a challenge.*
 
 ---
 
-## **Next Steps and Recommendations**
+## **Next Steps and Recommendations {#next-steps-and-recommendations}**
 ### **Actionable Recommendations:**
 1. Launch a **follow-up campaign** in **August** to sustain sales momentum.
 2. Focus on urban markets for **Product A**, as they demonstrate the highest potential.
@@ -147,7 +147,7 @@ You can embed videos directly into your report using HTML. For example:
 
 ---
 
-## **Additional Notes**
+## **Additional Notes {#additional-notes}**
 - **Dataset:** [View Dataset](https://github.com/epfl-dlab/YouNiverse)
 - **Tools Used:** *Python, pandas, Matplotlib*
 - **References:** Internal sales records and web traffic data.
