@@ -1,3 +1,13 @@
+---
+layout: default
+---
+
+<div class="banner">
+    Data Analysis Presentation
+</div>
+
+<div class="content">
+
 # Data Analysis Report Template
 
 ## **Main Title of the Report**

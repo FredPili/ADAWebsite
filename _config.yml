@@ -2,17 +2,9 @@
 
 # Site Settings
 title: "Data Analysis Presentation"
-description: "Insights and Findings - A detailed breakdown of our analysis"
+description: "Insights and Findings"
 theme: jekyll-theme-cayman
 
-# Theme Configuration
-defaults:
-  - scope:
-      path: "" # Applies to all files
-    values:
-      layout: default # Full-width content layout
-
-# Additional Settings
-markdown: kramdown
-plugins:
-  - jekyll-feed
+# Custom CSS for styling
+include:
+  - assets/css/style.css
