@@ -36,7 +36,7 @@ background-color: #ffffff; /* Background for visibility */
     border-radius: 8px; /* Rounded corners */
     box-sizing: border-box; /* Include padding in width calculations */
     height: auto; /* Adjusts to content size */
-    position: sticky;
+    position: fixed;
     top: 0;
 }
 
