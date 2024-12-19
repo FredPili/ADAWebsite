@@ -239,7 +239,7 @@ footer {
     border-radius: 8px;
     overflow-y: auto; /* Allow scrolling for long content */
     box-sizing: border-box;
-    right: -250px; /* Move the sidebar to the right */
+    right: -150px; /* Move the sidebar to the right */
     transition: right 1s ease;
 }
 
