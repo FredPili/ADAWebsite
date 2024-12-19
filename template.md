@@ -139,7 +139,7 @@ You can embed videos directly into your report using HTML. For example:
 
 ---
 
-## **Next Steps and Recommendations {#next-steps-and-recommendations}**
+## **Next Steps and Recommendations**
 ### **Actionable Recommendations:**
 1. Launch a **follow-up campaign** in **August** to sustain sales momentum.
 2. Focus on urban markets for **Product A**, as they demonstrate the highest potential.
