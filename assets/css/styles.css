@@ -249,8 +249,9 @@ footer {
 /* Left Bar for TOC */
 .toc-bar {
   width: 5px;
-  background-color: #007bff; /* Blue color */
+  background-color: #8d8d8d; /* Gray */
   margin-right: 10px; /* Space between the bar and TOC */
+  height: 100%
 }
 
 /* Sidebar TOC */
