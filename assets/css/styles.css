@@ -38,6 +38,7 @@ background-color: #ffffff; /* Background for visibility */
     height: auto; /* Adjusts to content size */
     position: fixed;
     top: 0;
+    right: 5px;
 }
 
 /* Banner at the top */
