@@ -16,14 +16,19 @@ Let's see if there is a seasonality in uploads for academic-type videos
   <iframe src="assets/plots/academic_videos_per_month_by_year.html" width="100%" height="500" frameborder="0"></iframe>
 </div>
 
-By looking at this plot, we could think that there is a peak of uploads in September. This would confirm the idea that academic-type content is most used during the school year, and here particularly at the start of the schoolyear. However, by analyzing more in details, we notice than this pattern is not present for every year. The peak in September is in fact mostly due to the years 2015, 2017 and 2018.
+By looking at this plot, we could think that there is a peak of uploads in September. This would confirm the idea that academic-type content is most used during the school year, and here particularly at the start of the schoolyear. 
 
 <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
     <p style="margin-right: 1rem;">
-        However, this specific pattern could be due to the distribution of the videos per month on the whole dataset.
+        As this specific pattern could be due to the distribution of the videos per month on the whole dataset.
+        To be sure that our distribution is significant, we perform a chi-square goodness of fit test. This tests the null hypothesis that the categorical data has the given frequencies.
     </p>
-    <img src="assets/plots/comparison_proportion_video_uploaded_month.png" alt="Website Traffic Growth" width="60%">
+    <img src="assets/plots/comparison_proportion_video_uploaded_month.png" alt="Website Traffic Growth" width="50%">
 </div>
+
+We obtain a p-value of 4.062e-07, strongly rejecting the null hypothesis. However, by analyzing more in details, we notice than this pattern is not present for every year. The peak in September is in fact mostly due to the years 2015, 2017 and 2018. We then performed chi-square the same chi squared test for every year. We obtain that the p-values falling under the threshold of 0.005 are in fact 2015, 2017 and 2018. We then cannot extrapolate that there is a real seasonality for other than the these year.
+
+> *Note: we set the confidence threshold at 0.005 because we perform 10 statistical tests, the propoability of a p-value falling under the threshold of 0.05 is then 10 times higher*
 
 
 The data reveals an intriguing contrast: while the number of educational videos uploaded has grown exponentially, their proportion relative to all uploaded content has steadily declined since peaking in the early 2010s. This downward trend in proportion began after 2010, even as the absolute numbers continued to rise, indicating that the overall expansion of content categories on YouTube has far outpaced the growth of educational content. It is important to note that the years 2005, 2006, and 2007 shows a very little number of videos that could affect the statistics. This could be the reason why we see a growing trend in the proportion of videos at the earliest years.
