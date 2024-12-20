@@ -18,21 +18,11 @@ Let's see if there is a seasonality in uploads for academic-type videos
 
 By looking at this plot, we could think that there is a peak of uploads in September. This would confirm the idea that academic-type content is most used during the school year, and here particularly at the start of the schoolyear. However, by analyzing more in details, we notice than this pattern is not present for every year. The peak in September is in fact mostly due to the years 2015, 2017 and 2018.
 
-<div style="display: flex; align-items: center; margin-bottom: 2rem;">
-  <!-- Plot -->
-  <div style="flex: 1; margin-right: 1rem;">
-    <iframe src="assets/plots/comparison_proportion_video_uploaded_month.html" width="100%" height="500" frameborder="0"></iframe>
-  </div>
-  <!-- Text -->
-  <div style="flex: 1;">
-    <h3>Insights</h3>
-    <p>
-      This Plotly chart highlights the performance of various categories over time. Use it to analyze trends and identify key areas for improvement or further study.
+<div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+    <p style="margin-right: 1rem;">
+        However, this specific pattern could be due to the distribution of the videos per month on the whole dataset.
     </p>
-    <p>
-      The data indicates significant growth in Q3, with certain categories outperforming others due to targeted strategies.
-    </p>
-  </div>
+    <img src="assets/plots/comparison_proportion_video_uploaded_month.png" alt="Website Traffic Growth" width="40%">
 </div>
 
 
