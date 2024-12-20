@@ -5,6 +5,25 @@ banner_header: "How You Became Smarter ...."
 subtitle: ".... or how has the volume of educational content changed over time"
 ---
 
+In the last 15 years, YouTube has emerged as a powerhouse for educational content, revolutionizing how knowledge is shared and consumed globally. From tutorials to in-depth lectures, the platform has become a go-to resource for learning. But how did the volume of educational content on Youtube evolved over time ? We will explore the trends in the number of educational videos uploaded each year alongside the growth in the number of educational channels created annually.
+
+## **Educational videos and channels over the years**
+First, let's look at the educational videos uploaded per year. 
+<div>
+  <iframe src="assets/educational_videos_number_proportion_per_year.html" width="100%" height="500" frameborder="0"></iframe>
+  <p style="text-align: center;">Figure 1: Dummy Plotly Chart</p>
+</div>
+The data reveals an intriguing contrast: while the number of educational videos uploaded has grown exponentially, their proportion relative to all uploaded content has steadily declined since peaking in the early 2010s. This downward trend in proportion began after 2010, even as the absolute numbers continued to rise, indicating that the overall expansion of content categories on YouTube has far outpaced the growth of educational content. It is important to note that the years 2005, 2006, and 2007 shows a very little number of videos that could affect the statistics. This could be the reason why we see a growing trend in the proportion of videos at the earliest years.What about the number of educational channels ?
+<div>
+  <iframe src="assets/educational_channel_number_proportion_per_year.html" width="100%" height="500" frameborder="0"></iframe>
+  <p style="text-align: center;">Figure 1: Dummy Plotly Chart</p>
+</div>
+This plot highlight a reccuring trend: while the number of educational channels created per year is growing, the proportion of educational channels is decreasing. A particularly striking observation is the sharp decline in both the absolute number and the proportion of educational channels created in 2018, marking a challenging year for the creation of educational content. This could suggests a significant shift in the platform's dynamics or external factors influencing creators’ decisions during this year.
+
+>*Note: The year 2019 is not fully accounted for in the dataset, so the absolute number of videos and channels for this year is incomplete and not representative of the full annual trend.*
+
+
+
 ## **Test**
 <div>
   <iframe src="assets/proportion_video_type_per_year.html" width="100%" height="500" frameborder="0"></iframe>
