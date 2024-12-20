@@ -33,6 +33,7 @@ For this reason, we decided re-classify the videos using BART, a natural languag
   <p style="text-align: center;">Figure 1: Dummy Plotly Chart</p>
 </div>
 
+The data reveals a clear shift in the type of educational content on YouTube, with a decline in academic videos and a rise in edutainment content over time. Between 2008 and 2013, there is a noticeable increase in edutainment videos, signaling its growing popularity during the early years of YouTube. This early rise in popularity could reflect the novelty of the platform and the unmet demand for new and accessible educational content. The slower growth in later years might suggest a maturation of the YouTube ecosystem, where edutainment became an established genre. We see that academic videos became less and less popular reaching a plateau at around 2011, reaching a plateau. We could argue that youtube introduced a new type of educational content that is easier to consume and fits YouTube’s informal and entertainment-focused culture better. The transition from academic to edutainment content reflects changing consumer preferences. Viewers on YouTube may prefer content that simplifies complex topics, incorporates storytelling, and uses visuals and humor to maintain engagement.
 
 
 
