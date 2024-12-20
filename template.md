@@ -22,6 +22,24 @@ This plot highlight a reccuring trend: while the number of educational channels 
 
 >*Note: The year 2019 is not fully accounted for in the dataset, so the absolute number of videos and channels for this year is incomplete and not representative of the full annual trend.*
 
+### **Plotly Chart with Text on the Left**
+<div style="display: flex; align-items: center; margin-bottom: 2rem;">
+  <!-- Text -->
+  <div style="flex: 1; margin-right: 1rem;">
+    <h3>Analysis</h3>
+    <p>
+      The data reveals an intriguing contrast: while the number of educational videos uploaded has grown exponentially, their proportion relative to all uploaded content has steadily declined since peaking in the early 2010s. This downward trend in proportion began after 2010, even as the absolute numbers continued to rise, indicating that the overall expansion of content categories on YouTube has far outpaced the growth of educational content. 
+    </p>
+    <p>
+      It is important to note that the years 2005, 2006, and 2007 shows a very little number of videos that could affect the statistics. This could be the reason why we see a growing trend in the proportion of videos at the earliest years.What about the number of educational channels ?
+    </p>
+  </div>
+  <!-- Plot -->
+  <div style="flex: 1;">
+    <iframe src="assets/plot.html" width="100%" height="500" frameborder="0"></iframe>
+  </div>
+</div>
+
 
 
 ## **Test**
