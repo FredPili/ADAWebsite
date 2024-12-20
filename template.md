@@ -26,10 +26,7 @@ This plot highlight a reccuring trend: while the number of educational channels 
 As said earlier, these are the videos and channels categorized as Educational in the dataset based on self-definition by the content creator. The term "Educational" can encompass a wide range of interpretations, including content such as children's songs, or tutorials on various subjects which may not align with the more focused educational topics we are specifically interested in analyzing.
 
 ## **Academic VS Edutainement**
-For this reason, we decided re-classify the videos using BART, a natural language processing model capable of performing sentiment analysis. We asked the model to classify a sample of 50000 "Educational" videos into 3 categories:
-- academic
-- edutainement or science popularization
-- hobby
+For this reason, we decided re-classify the videos using BART, a natural language processing model capable of performing sentiment analysis. We asked the model to classify a sample of 50000 "Educational" videos into 3 categories: 'academic', 'edutainement or science popularization' and 'hobby'.
 <div>
   <iframe src="assets/proportion_video_type_per_year.html" width="100%" height="500" frameborder="0"></iframe>
   <p style="text-align: center;">Figure 1: Dummy Plotly Chart</p>
