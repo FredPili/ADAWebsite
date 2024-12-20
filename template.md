@@ -1,29 +1,54 @@
 ---
 layout: default
 title: "Sickada"
-banner_header: "How You Became Smarter ...."
-subtitle: ".... or how has the volume of educational content changed over time"
+banner_header: "Y’all study last minute, and it shows ...."
+subtitle: ".... or are there specific times when educational content popularity spikes over the year?"
 ---
 
-In the last 15 years, YouTube has emerged as a powerhouse for educational content, revolutionizing how knowledge is shared and consumed globally. From tutorials to in-depth lectures, the platform has become a go-to resource for learning. But how did the volume of educational content on Youtube evolved over time ? We will explore the trends in the number of educational videos uploaded each year alongside the growth in the number of educational channels created annually.
+One of our main motivation for this analyis comes from our own experience as students using Youtube. The ability to watch videos that complement lectures and have concepts clearly explained rather than scrolling through endless Wikipedia pages has truly been a game changer. The platform has become an unofficial teaching assistant, guiding us through everything from calculus proofs to developing a website. This got us thinking: are there certain times of the year when educational content becomes even more popular? Maybe during exam seasons, when students worlwide are trying to cram an entire semester’s worth of concepts into a single night. With this analysis, we set out to uncover whether there’s a seasonal rhythm to the upload and consumption of educational content.
 
-## **Educational videos and channels over the years**
-To begin with, let's look at the volume of videos and channels categorized as Educational in the dataset.
+## **Which **
+To be able to differentiate between multiple type of educational content, we classified the videos using BART, a natural language processing model capable of performing sentiment analysis. We used a sample of 50000 "Educational" videos into 3 categories: 'academic', 'edutainement or science popularization' and 'hobby'.
+
+Let's see if there is a seasonality in uploads for academic-type videos
+
 <div>
-  <iframe src="assets/educational_videos_number_proportion_per_year.html" width="100%" height="500" frameborder="0"></iframe>
-  <p style="text-align: center;">Figure 1: Dummy Plotly Chart</p>
+  <iframe src="assets/plots/academic_videos_per_month_by_year.html" width="100%" height="500" frameborder="0"></iframe>
 </div>
-The data reveals an intriguing contrast: while the number of educational videos uploaded has grown exponentially, their proportion relative to all uploaded content has steadily declined since peaking in the early 2010s. This downward trend in proportion began after 2010, even as the absolute numbers continued to rise, indicating that the overall expansion of content categories on YouTube has far outpaced the growth of educational content. It is important to note that the years 2005, 2006, and 2007 shows a very little number of videos that could affect the statistics. This could be the reason why we see a growing trend in the proportion of videos at the earliest years.What about the number of educational channels ?
-<div>
+
+By looking at this plot, we could think that there is a peak of uploads in September. This would confirm the idea that academic-type content is most used during the school year, and here particularly at the start of the schoolyear. However, by analyzing more in details, we notice than this pattern is not present for every year. The peak in September is in fact mostly due to the years 2015, 2017 and 2018.
+
+<div style="display: flex; align-items: center; margin-bottom: 2rem;">
+  <!-- Plot -->
+  <div style="flex: 1; margin-right: 1rem;">
+    <iframe src="assets/plots/comparison_proportion_video_uploaded_month.html" width="100%" height="500" frameborder="0"></iframe>
+  </div>
+  <!-- Text -->
+  <div style="flex: 1;">
+    <h3>Insights</h3>
+    <p>
+      This Plotly chart highlights the performance of various categories over time. Use it to analyze trends and identify key areas for improvement or further study.
+    </p>
+    <p>
+      The data indicates significant growth in Q3, with certain categories outperforming others due to targeted strategies.
+    </p>
+  </div>
+</div>
+
+
+The data reveals an intriguing contrast: while the number of educational videos uploaded has grown exponentially, their proportion relative to all uploaded content has steadily declined since peaking in the early 2010s. This downward trend in proportion began after 2010, even as the absolute numbers continued to rise, indicating that the overall expansion of content categories on YouTube has far outpaced the growth of educational content. It is important to note that the years 2005, 2006, and 2007 shows a very little number of videos that could affect the statistics. This could be the reason why we see a growing trend in the proportion of videos at the earliest years.
+
+<!-- What about the number of educational channels ? -->
+<!-- <div>
   <iframe src="assets/educational_channel_number_proportion_per_year.html" width="100%" height="500" frameborder="0"></iframe>
   <p style="text-align: center;">Figure 1: Dummy Plotly Chart</p>
 </div>
-This plot highlight a reccuring trend: while the number of educational channels created per year is growing, the proportion of educational channels is decreasing. A particularly striking observation is the sharp decline in both the absolute number and the proportion of educational channels created in 2018, marking a challenging year for the creation of educational content. This could suggests a significant shift in the platform's dynamics or external factors influencing creators’ decisions during this year.
+This plot highlight a reccuring trend: while the number of educational channels created per year is growing, the proportion of educational channels is decreasing. A particularly striking observation is the sharp decline in both the absolute number and the proportion of educational channels created in 2018, marking a challenging year for the creation of educational content. This could suggests a significant shift in the platform's dynamics or external factors influencing creators’ decisions during this year. -->
 
 >*Note: The year 2019 is not fully accounted for in the dataset, so the absolute number of videos and channels for this year is incomplete and not representative of the full annual trend.*
 
 
-As said earlier, these are the videos and channels categorized as Educational in the dataset based on self-definition by the content creator. The term "Educational" can encompass a wide range of interpretations, including content such as children's songs, or tutorials on various subjects which may not align with the more focused educational topics we are specifically interested in analyzing.
+As said earlier, these are the videos and channels categorized as Educational in the dataset, based on self-definition by the content creator. The term "Educational" can encompass a wide range of interpretations, including content such as children's songs, or tutorials on various subjects which may not align with the more focused educational topics we are specifically interested in analyzing.
 
 ## **Academic VS Edutainement**
 For this reason, we decided re-classify the videos using BART, a natural language processing model capable of performing sentiment analysis. We asked the model to classify a sample of 50000 "Educational" videos into 3 categories: 'academic', 'edutainement or science popularization' and 'hobby'.
