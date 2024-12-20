@@ -26,6 +26,11 @@ By looking at this plot, we could think that there is a peak of uploads in Septe
     <img src="assets/plots/comparison_proportion_video_uploaded_month.png" alt="Website Traffic Growth" width="55%">
 </div>
 
+Let's do the same analysis for the edutainment-type videos
+<div>
+  <iframe src="assets/plots/edutainment_videos_per_month_by_year.html" width="100%" height="500" frameborder="0"></iframe>
+</div>
+Performing the same tests as for the academic videos, we find that the only year with a different distribution than the original distribution is the year 2018 and the observed peak is in July. These tests allows us to say that there is very little if not seasonality for the edutainment-type videos.
 
 
 We obtain a p-value of 4.062e-07, strongly rejecting the null hypothesis. However, by analyzing more in details, we notice than this pattern is not present for every year. The peak in September is in fact mostly due to the years 2015, 2017 and 2018. We then performed chi-square the same chi squared test for every year. We obtain that the p-values falling under the threshold of 0.005 are in fact 2015, 2017 and 2018. We then cannot extrapolate that there is a real seasonality for other than the these year.
