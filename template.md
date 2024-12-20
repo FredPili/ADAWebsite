@@ -22,7 +22,7 @@ By looking at this plot, we could think that there is a peak of uploads in Septe
     <p style="margin-right: 1rem;">
         However, this specific pattern could be due to the distribution of the videos per month on the whole dataset.
     </p>
-    <img src="assets/plots/comparison_proportion_video_uploaded_month.png" alt="Website Traffic Growth" width="40%">
+    <img src="assets/plots/comparison_proportion_video_uploaded_month.png" alt="Website Traffic Growth" width="60%">
 </div>
 
 
