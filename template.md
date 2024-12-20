@@ -7,7 +7,7 @@ subtitle: ".... or are there specific times when educational content popularity 
 
 One of our main motivation for this analyis comes from our own experience as students using Youtube. The ability to watch videos that complement lectures and have concepts clearly explained rather than scrolling through endless Wikipedia pages has truly been a game changer. The platform has become an unofficial teaching assistant, guiding us through everything from calculus proofs to developing a website. This got us thinking: are there certain times of the year when educational content becomes even more popular? Maybe during exam seasons, when students worlwide are trying to cram an entire semester’s worth of concepts into a single night. With this analysis, we set out to uncover whether there’s a seasonal rhythm to the upload and consumption of educational content.
 
-## **Which **
+## **What is the best time to upload videos**
 To be able to differentiate between multiple type of educational content, we classified the videos using BART, a natural language processing model capable of performing sentiment analysis. We used a sample of 50000 "Educational" videos into 3 categories: 'academic', 'edutainement or science popularization' and 'hobby'.
 
 Let's see if there is a seasonality in uploads for academic-type videos
@@ -23,8 +23,10 @@ By looking at this plot, we could think that there is a peak of uploads in Septe
         As this specific pattern could be due to the distribution of the videos per month on the whole dataset.
         To be sure that our distribution is significant, we perform a chi-square goodness of fit test. This tests the null hypothesis that the categorical data has the given frequencies.
     </p>
-    <img src="assets/plots/comparison_proportion_video_uploaded_month.png" alt="Website Traffic Growth" width="50%">
+    <img src="assets/plots/comparison_proportion_video_uploaded_month.png" alt="Website Traffic Growth" width="55%">
 </div>
+
+
 
 We obtain a p-value of 4.062e-07, strongly rejecting the null hypothesis. However, by analyzing more in details, we notice than this pattern is not present for every year. The peak in September is in fact mostly due to the years 2015, 2017 and 2018. We then performed chi-square the same chi squared test for every year. We obtain that the p-values falling under the threshold of 0.005 are in fact 2015, 2017 and 2018. We then cannot extrapolate that there is a real seasonality for other than the these year.
 
