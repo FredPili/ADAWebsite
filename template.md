@@ -22,7 +22,6 @@ This plot highlight a reccuring trend: while the number of educational channels 
 
 >*Note: The year 2019 is not fully accounted for in the dataset, so the absolute number of videos and channels for this year is incomplete and not representative of the full annual trend.*
 
-### **Plotly Chart with Text on the Left**
 <div style="display: flex; align-items: center; margin-bottom: 2rem;">
   <!-- Text -->
   <div style="flex: 1; margin-right: 1rem;">
@@ -36,7 +35,21 @@ This plot highlight a reccuring trend: while the number of educational channels 
   </div>
   <!-- Plot -->
   <div style="flex: 1;">
-    <iframe src="assets/plot.html" width="100%" height="500" frameborder="0"></iframe>
+    <iframe src="assets/educational_videos_number_proportion_per_year.html" width="100%" height="500" frameborder="0"></iframe>
+  </div>
+</div>
+
+<div style="display: flex; align-items: center; margin-bottom: 2rem;">
+  <!-- Plot -->
+  <div style="flex: 1; margin-right: 1rem;">
+    <iframe src="assets/educational_channel_number_proportion_per_year.html" width="100%" height="500" frameborder="0"></iframe>
+  </div>
+  <!-- Text -->
+  <div style="flex: 1;">
+    <h3>Insights</h3>
+    <p>
+      This plot highlight a reccuring trend: while the number of educational channels created per year is growing, the proportion of educational channels is decreasing. A particularly striking observation is the sharp decline in both the absolute number and the proportion of educational channels created in 2018, marking a challenging year for the creation of educational content. This could suggests a significant shift in the platform's dynamics or external factors influencing creators’ decisions during this year.
+    </p>
   </div>
 </div>
 
