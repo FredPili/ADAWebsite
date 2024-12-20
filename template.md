@@ -6,10 +6,27 @@ subtitle: ".... or how has the volume of educational content changed over time"
 ---
 
 ## **Test**
-> oui oui baguette
-La vie defois c'est comme un kiwi
-- oui
-- non
+<div>
+  <iframe src="assets/proportion_video_type_per_year.html" width="100%" height="500" frameborder="0"></iframe>
+  <p style="text-align: center;">Figure 1: Dummy Plotly Chart</p>
+</div>
+
+<div style="display: flex; align-items: center; margin-bottom: 2rem;">
+  <!-- Plot -->
+  <div style="flex: 1; margin-right: 1rem;">
+    <iframe src="assets/proportion_video_type_per_year.html" width="100%" height="500" frameborder="0"></iframe>
+  </div>
+  <!-- Text -->
+  <div style="flex: 1;">
+    <h3>Insights</h3>
+    <p>
+      This Plotly chart highlights the performance of various categories over time. Use it to analyze trends and identify key areas for improvement or further study.
+    </p>
+    <p>
+      The data indicates significant growth in Q3, with certain categories outperforming others due to targeted strategies.
+    </p>
+  </div>
+</div>
 
 ## **Introduction**
 > A brief introduction explaining the purpose of the analysis and the key questions being explored. Keep it simple, clear, and engaging.
